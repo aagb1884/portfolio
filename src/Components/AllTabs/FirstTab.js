@@ -2,8 +2,15 @@ import React from "react";
 const FirstTab = () => {
   return (
     <div className="FirstTab">
-      <p>First Tab!! Hurray!!</p>
-      {/* First tab content will go here */}
+      <ul>
+        <li><h2>About Me</h2></li>
+      </ul>
+      <h2>Projects</h2>
+      <ul>
+        <li>Barry Chips' Barry Chips</li>
+        <li>ExoWeather</li>
+        <li>Eurovision Bingo</li>
+      </ul>
     </div>
   );
 };

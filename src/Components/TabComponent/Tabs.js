@@ -23,13 +23,22 @@ const Tabs = () => {
  
       <div className="outlet">
         <TabContent id="tab1" activeTab={activeTab}>
-          <p>Tab 1 works!</p>
+      <h2>About Me</h2>
+      <h2>Projects</h2>
+      <ul>
+        <li>Barry Chips' Barry Chips</li>
+        <li>ExoWeather</li>
+        <li>Eurovision Bingo</li>
+      </ul>
         </TabContent>
         <TabContent id="tab2" activeTab={activeTab}>
-          <p>Tab 2 works!</p>
+        <h2>About Me</h2>
+      <h2>Published Works</h2>
         </TabContent>
         <TabContent id="tab3" activeTab={activeTab}>
-          <p>Tab 3 works!</p>
+        <h2>About Me</h2>
+      <h2>Podcasting</h2>
+      <h2>Published Works</h2>
         </TabContent>
       </div>
     </div>
