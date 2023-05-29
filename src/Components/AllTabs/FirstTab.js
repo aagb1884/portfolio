@@ -1,17 +1,24 @@
 import React from "react";
+import BarryChips from "../Projects/BarryChips";
+import ExoWeather from "../Projects/exoWeather";
+import EurovisionBingo from "../Projects/EurovisionBingo";
+
 const FirstTab = () => {
+
+  // const barryImage = "<img src="images/barry_chips_homepage.png">
+
   return (
     <div className="FirstTab">
-      <ul>
-        <li><h2>About Me</h2></li>
-      </ul>
-      <h2>Projects</h2>
-      <ul>
-        <li>Barry Chips' Barry Chips</li>
-        <li>ExoWeather</li>
-        <li>Eurovision Bingo</li>
-      </ul>
+      <h3>Projects</h3>
+      <br />
+      <BarryChips />
+      <br />
+      <ExoWeather />
+      <br />
+      <EurovisionBingo />
+
     </div>
   );
 };
 export default FirstTab;
+

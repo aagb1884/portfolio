@@ -1,8 +1,8 @@
 import React from "react";
+
 const SecondTab = () => {
   return (
     <div className="SecondTab">
-      <h2>About Me</h2>
       <h2>Published Works</h2>
     </div>
   );
