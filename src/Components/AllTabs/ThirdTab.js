@@ -1,6 +1,7 @@
 import React from "react";
 import Podcasting from "../PoetryComponents/Podcasting";
 import PublishedWorks from "../PoetryComponents/PublishedWorks";
+import LiveEvents from "../PoetryComponents/LiveEvents";
 
 const ThirdTab = () => {
   return (
@@ -10,6 +11,7 @@ const ThirdTab = () => {
       <br />
       <Podcasting />
      <PublishedWorks />
+     <LiveEvents />
     </div>
   );
 };
