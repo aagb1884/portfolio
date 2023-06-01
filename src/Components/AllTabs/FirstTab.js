@@ -5,11 +5,12 @@ import EurovisionBingo from "../Projects/EurovisionBingo";
 
 const FirstTab = () => {
 
-  // const barryImage = "<img src="images/barry_chips_homepage.png">
 
   return (
     <div className="FirstTab">
       <h3>Projects</h3>
+      <p><small>Hover over project title for more info.</small></p>
+      <p><small>Scroll down or use Down key to move down the page.</small></p>
       <br />
       <BarryChips />
       <br />
