@@ -37,6 +37,7 @@ const BarryChips = () => {
             <li>PostgreSQL</li>
         </ul>
         </p>
+        <p><a href="https://github.com/aagb1884/solo_project_andrew_blair">Github Repo</a></p>
         <br />
         <img src="images/barry_chips_homepage.png" width="600" height="400"></img>
                 </div>

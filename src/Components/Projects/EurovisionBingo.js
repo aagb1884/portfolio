@@ -34,6 +34,8 @@ const EurovisionBingo = () => {
             <li>CSS</li>
         </ul>
         </p>
+        <p><a href="https://github.com/aagb1884/eurovisionBingo">Github Repo</a></p>
+        <p><a href="https://poised-step.surge.sh/">Play App Here</a></p>
        </div>
         )}
      </div>

@@ -22,7 +22,10 @@ const images = [
   'images/slideshow/cultbox_fan_service.png',
   'images/slideshow/drwho_adams.png',
   'images/slideshow/why_does_the_empire_keep_building_deathstars.png',
-  'images/slideshow/yonderland_interviews.png'
+  'images/slideshow/yonderland_interviews.png',
+  'images/slideshow/james_mcavoy_interview.png',
+  'images/slideshow/top_50_arseholes.png',
+  'images/slideshow/yr_heroes_r_terrible.png',
 ];
 
 

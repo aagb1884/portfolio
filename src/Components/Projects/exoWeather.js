@@ -34,6 +34,7 @@ const ExoWeather = () => {
             <li>3rd party APIs</li>
             <li>CSS</li>
         </ul>
+        <p><a href="https://github.com/aagb1884/exoWeather">Github Repo</a></p>
         </p>
        </div>
      )}
