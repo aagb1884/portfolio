@@ -1,7 +1,9 @@
+import './Header.css';
+
 const Header = () => {
     return ( 
         <div className="Header">
-            <h1>Andrew  Blair's Portfolio</h1>
+            <h1><span class="fancy">Andrew  Blair's Portfolio</span></h1>
         </div>
      );
 }

@@ -1,26 +1,19 @@
 import {useState} from 'react';
 
 const BarryChips = () => {
-    const [isHovering, setIsHovering] = useState(false);
+    const [isVisible, setIsVisible] = useState(false);
 
-    const handleMouseOver = () => {
-        setIsHovering(true);
-    }
-    const handleMouseOut = () => {
-        setIsHovering(false);
-    }
+  const toggleVisibility = () => {
+    setIsVisible(!isVisible);
+  };
 
 
 
     return ( 
-        <div
-        onMouseOver={handleMouseOver}
-        onMouseOut={handleMouseOut}
-        >
-            <div className='Barry-Chips'>
-            <h4>Barry Chips' Barry Chips</h4>
-            <br />
-            {isHovering && (
+        <div className='Barry-Chips'>
+      <h4 onClick={toggleVisibility}>Barry Chips' Barry Chips</h4>
+      {isVisible &&   
+        <p>
             <div className='Barry-Chips-Description'>
                   <h5>Solo Python Project, 1 week: </h5>
        <p>The app simulates a chip shop website: “Barry Chips’ Barry Chips”. This was achieved using Python, SQL, CSS, HTML, Flask and psycogb2 
@@ -41,10 +34,10 @@ const BarryChips = () => {
         <br />
         <img src="images/barry_chips_homepage.png" width="600" height="400"></img>
                 </div>
-                
-            )}
+                </p>
+      }
             </div>
-        </div>
+     
 
      );
 }

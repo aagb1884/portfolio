@@ -9,8 +9,7 @@ const FirstTab = () => {
   return (
     <div className="FirstTab">
       <h3>Projects</h3>
-      <p><small>Hover over project title for more info.</small></p>
-      <p><small>Scroll down or use Down key to move down the page.</small></p>
+      <p><small>Click on project heading to see/hide further info.</small></p>
       <br />
       <BarryChips />
       <br />

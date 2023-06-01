@@ -1,7 +1,16 @@
+import React, { useState } from 'react';
+
 const LiveEvents = () => {
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  const toggleVisibility = () => {
+    setIsVisible(!isVisible);
+  };
     return ( 
-        <>
-        <h3>Live Events</h3>
+      <div className='live-events'>
+      <h2 onClick={toggleVisibility}>Live Events</h2>
+      {isVisible && 
         <p>
       <ul>
         <li>Auld Enemies - July 2014 – Poetry (Collaboration with <a href="https://www.kirstennorrie.com/">McGillivray</a>)<br />
@@ -15,8 +24,8 @@ const LiveEvents = () => {
         <li>Beyond Any Curtain - Stanza 2021 - 22 <a href="https://artarsenal.in.ua/en/laboratory/proekt/ukraine-scotland-collaborative-literary-project/">[Read More]</a></li>
       </ul>
       </p>
-      <br />
-        </>
+}    
+        </div>
      );
 }
  
