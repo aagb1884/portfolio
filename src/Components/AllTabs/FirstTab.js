@@ -2,6 +2,7 @@ import React from "react";
 import BarryChips from "../Projects/BarryChips";
 import ExoWeather from "../Projects/exoWeather";
 import EurovisionBingo from "../Projects/EurovisionBingo";
+import SlightlyBetterBooks from "../Projects/SlightlyBetterBooks";
 
 const FirstTab = () => {
 
@@ -15,8 +16,9 @@ const FirstTab = () => {
       <br />
       <ExoWeather />
       <br />
+      <SlightlyBetterBooks />
+      <br />
       <EurovisionBingo />
-
     </div>
   );
 };

@@ -3,13 +3,18 @@
   padding: 0;
   margin: 0;
 }
+
 body{
   background-color: skyblue;
+}
+body li{
+  list-style: none;
 }
 .Header{
 width: auto;
 height: auto;
-font-size: xx-large;
+font-size: 50px;
+background-color: rgba(50, 224, 196, 0.05);
 }
 
 /* h1 {

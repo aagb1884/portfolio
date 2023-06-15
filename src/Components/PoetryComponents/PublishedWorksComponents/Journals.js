@@ -1,7 +1,7 @@
 const Journals = () => {
     return ( 
 <>
-        <h3>Journals</h3>
+        <h3><u>Journals</u></h3>
       <ul>
         <li>Valve #3 [Out of Print]</li>
         <li>Valve #4 [Out of Print]</li>

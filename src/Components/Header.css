@@ -32,7 +32,6 @@
   font-family: 'Oswald', sans-serif;
   font-weight: 900;
 } */
-
 /* p {
   font-size: 8vw;
   text-transform: uppercase;
@@ -49,5 +48,16 @@
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+	animation: parallax 60s ease infinite alternate;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
   }
 }
+@keyframes parallax {
+	0% {
+	  background-position: 0 0;
+	}
+	70% {
+	  background-position: 80 200px;
+	}
+  }
