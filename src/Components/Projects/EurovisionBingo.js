@@ -8,7 +8,7 @@ const EurovisionBingo = () => {
     };
     return ( 
         <div className='eurovision-bingo'>
-      <h4 onClick={toggleVisibility}>Eurovision Bingo</h4>
+      <h2 onClick={toggleVisibility}>Eurovision Bingo</h2>
       {isVisible &&   
         <p>
         <h5>Solo JavaScript Project: </h5>

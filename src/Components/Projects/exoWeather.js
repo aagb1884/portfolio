@@ -9,7 +9,7 @@ const ExoWeather = () => {
 
     return ( 
         <div className='exoWeather'>
-      <h4 onClick={toggleVisibility}>exoWeather</h4>
+      <h2 onClick={toggleVisibility}>exoWeather</h2>
       {isVisible &&     
         <p><h5>JavaScript Group Project, 1 week:</h5>
        <p>This React app fetches APIs, Router DOM, styled components and database to provide weather foreast information for multiple locations.</p> 

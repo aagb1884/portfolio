@@ -11,7 +11,7 @@ const BarryChips = () => {
 
     return ( 
         <div className='Barry-Chips'>
-      <h4 onClick={toggleVisibility}>Barry Chips' Barry Chips</h4>
+      <h2 onClick={toggleVisibility}>Barry Chips' Barry Chips</h2>
       {isVisible &&   
         <p>
             <div className='Barry-Chips-Description'>

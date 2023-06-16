@@ -12,7 +12,7 @@ const SlightlyBetterBooks = () => {
 
     return ( 
         <div className="slightly-better-books">
-<h4 onClick={toggleVisibility}><i>Slightly</i> Better Books</h4>
+<h2 onClick={toggleVisibility}><i>Slightly</i> Better Books</h2>
       {isVisible &&     
         <p><h5>Capstone Project, Solo, 2 weeks:</h5>
             <p>For my final CodeClan project my aim was to build an extendable prototype of a bookshelf app aimed at parents and carers of children.</p>
