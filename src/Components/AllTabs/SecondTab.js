@@ -36,6 +36,7 @@ const SecondTab = () => {
       <p>Since then I've covered film and TV festivals, filing reviews and interviews with actors, directors, writers and artists.</p>
       <p>
       <h2>Published Works</h2>
+      <br />
       <ul>
         <li>My articles at <a href="https://www.denofgeek.com/author/andrew-blair/">Den of Geek</a> (2011 - Present Day)</li>
         <li>My articles at <a href="https://cultbox.co.uk/author/andrew-blair">Cultbox</a> (2013 - 2019)</li>
@@ -47,7 +48,7 @@ const SecondTab = () => {
       <div className="slide-container">
         <Zoom scale={0.4}>
           {
-            images.map((each, index) => <img key={index} style={{width: "800px"}} src={each} />)
+            images.map((each, index) => <img key={index} src={each} alt={`Slide ${index + 1}`}/>)
           }
         </Zoom>
       </div>

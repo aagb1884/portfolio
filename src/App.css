@@ -14,7 +14,15 @@ body li{
 width: auto;
 height: auto;
 font-size: 50px;
-/* background-color: rgba(50, 224, 196, 0.05); */
+/* background-color: rgb(135, 206, 235, 0.1);
+border-radius: 5px;
+border-color: skyblue;
+border: solid 2px; */
+}
+
+.Tabs{
+  padding: 10px;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -32,6 +40,8 @@ font-size: 50px;
   color: #fbf9f9;
   text-align: center;
 } */
+
+
 
 .Footer{
   /* position: fixed;
@@ -112,17 +122,18 @@ font-size: 50px;
     position: relative;
   }
   img{
-    width: 250px;
-    height: 200px;
+    width: 50%;
+    height: auto;
   }
   iframe{
-    width: 250px;
-    height: 200px;
+    width: 50%;
+    height: auto;
+   
   }
-  .slide-container{
-    width: 250px;
-    height: 200px;
-  }
+  /* .slide-container{
+    width:auto;
+    height: auto;
+  } */
 }
  
 /* Tab Navigation */
@@ -219,6 +230,27 @@ h2{
   justify-content: center;
   align-items: center;
 }
+
+.slide-container {
+  width: 100%;
+}
+
+.slide-image {
+  width: 800px;
+}
+@media (max-width: 900px) {
+  .slide-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .slide-image {
+    width: 500px;
+  }
+}
+
+
 
 @media only screen and (max-width: 500px) {
   h2{
