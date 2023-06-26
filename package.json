@@ -1,4 +1,5 @@
 {
+  "homepage": "https://aagb1884.github.io/",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -13,11 +14,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "npm run build && surge ./build/ andrewblair.co.uk"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

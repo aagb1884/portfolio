@@ -1,6 +1,6 @@
 const Anthologies = () => {
     return ( 
-<>
+<section>
 <h3><u>Anthologies</u></h3>
       <ul>
         <li><i>Forty Voices Strong</i>, 2019 (Grayson Books) <a href="https://graysonbooks.com/forty-voices-strong.html">[Buy Here]</a></li>
@@ -8,7 +8,7 @@ const Anthologies = () => {
         <li><i>The Last Song: Word for Frightened Rabbit</i>, 2023 (Broken Sleep Books) <a href="https://www.brokensleepbooks.com/product-page/ed-aaron-kent-maria-sledmere-the-last-song-words-for-frightened-rabbit">[Buy Here]</a></li>
       </ul>
       <br />
-</>
+</section>
 
      );
 }

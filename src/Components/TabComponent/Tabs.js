@@ -4,7 +4,7 @@ import TabContent from "../V2/TabContent";
 import FirstTab from "../AllTabs/FirstTab";
 import SecondTab from "../AllTabs/SecondTab";
 import ThirdTab from "../AllTabs/ThirdTab";
-import Footer from "../Footer";
+import Footer from "../HeaderSection";
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("tab1");

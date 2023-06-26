@@ -8,9 +8,10 @@ const FirstTab = () => {
 
 
   return (
-    <div className="FirstTab">
+    <section className="FirstTab">
       <h3>Projects</h3>
-      <p><small>Click on project heading to see/hide further info.</small></p>
+      <br />
+      <aside>Click on project heading to see/hide further info.</aside>
       <br />
       <BarryChips />
       <br />
@@ -19,7 +20,7 @@ const FirstTab = () => {
       <SlightlyBetterBooks />
       <br />
       <EurovisionBingo />
-    </div>
+    </section>
   );
 };
 export default FirstTab;

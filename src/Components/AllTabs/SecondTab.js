@@ -2,20 +2,6 @@ import React from "react";
 import { Zoom } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 
-// const spanStyle = {
-//   padding: '10px',
-//   background: '#efefef',
-//   color: '#000000'
-// }
-
-// const divStyle = {
-//   display: 'flex',
-//   alignItems: 'center',
-//   justifyContent: 'center',
-//   backgroundSize: 'contain',
-//   height: '600px',
-//   width: '800px'
-// }
 const images = [
   'images/slideshow/lotr_fandom.png',
   'images/slideshow/inside_out_review.png',
@@ -31,9 +17,12 @@ const images = [
 
 const SecondTab = () => {
   return (
-    <div className="SecondTab">
+    <section className="SecondTab">
+      <summary>
       <p>I began blogging about <i>Doctor Who</i> around 2008 to get into the habit of writing regularly, and then submitted work elsewhere.</p>
       <p>Since then I've covered film and TV festivals, filing reviews and interviews with actors, directors, writers and artists.</p>
+      </summary>
+      <br />
       <p>
       <h2>Published Works</h2>
       <br />
@@ -52,7 +41,7 @@ const SecondTab = () => {
           }
         </Zoom>
       </div>
-    </div>
+    </section>
   );
 };
 export default SecondTab;

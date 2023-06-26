@@ -8,7 +8,7 @@ const [isVisible, setIsVisible] = useState(false);
   };
 
   return ( 
-      <div className='podcasting'>
+      <section className='podcasting'>
       <h2 onClick={toggleVisibility}>Podcasting</h2>
       {isVisible && <p>I co-produced the <i>Poetry as F*ck</i> podcast with <a href="https://rossmccleary.com/">Ross McCleary</a> between 2015 and 2020.
       <p>This was a monthly spoken word podcast that comprised of three different formats: <a href="https://www.theskinny.co.uk/festivals/edinburgh-fringe/comedy/poets-against-humanity-comedy-spotlight"><i>Poets Against Humanity</i></a>  - a Creative Commons remix of <i>Cards Against Humanity</i> 
@@ -20,7 +20,7 @@ const [isVisible, setIsVisible] = useState(false);
       <p>In 2021/22 I was Writer-in-Residence at <a href="https://blogs.glowscotland.org.uk/nl/olhsmotherwell/">Our Lady's High School</a> in Motherwell, working with an S3 class on podasting, sound design, audio storytelling and freewriting. This was financed through Scottish Book Trust's <a href="https://www.scottishbooktrust.com/writing-and-authors/live-literature/school-residencies">Schools Residency Programme</a>.</p>
       </p>
 }
-      </div>
+      </section>
   )
 }
     

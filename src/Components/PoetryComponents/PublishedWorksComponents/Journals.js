@@ -1,6 +1,6 @@
 const Journals = () => {
     return ( 
-<>
+<section>
         <h3><u>Journals</u></h3>
       <ul>
         <li>Valve #3 [Out of Print]</li>
@@ -15,7 +15,7 @@ const Journals = () => {
       </ul>
       <br />
 
-      </>
+      </section>
      );
 }
  
