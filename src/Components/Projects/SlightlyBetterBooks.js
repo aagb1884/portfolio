@@ -12,7 +12,7 @@ const SlightlyBetterBooks = () => {
 
     return ( 
         <section className="slightly-better-books">
-<h2 onClick={toggleVisibility}>Slightly Better Books</h2>
+<h2 onClick={toggleVisibility}>Slightly Better Reads</h2>
       {isVisible &&     
         <div className='slighty-better-books-description'>
           <br />
