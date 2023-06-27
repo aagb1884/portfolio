@@ -1,24 +1,23 @@
-* {
-  /* box-sizing: border-box; */
+body{
+  background-color: #69A79C;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+body ul{
   padding: 0;
   margin: 0;
 }
 
-body{
-  background-color: #69A79C;
-}
 body li{
   list-style: none;
 }
+
 .Heading{
 width: auto;
 height: auto;
 font-size: 50px;
-}
-
-.Tabs{
-  padding: 20px;
-  border-radius: 30px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -51,7 +50,6 @@ font-size: 50px;
   
 }
 
- 
 .App {
   width: 100vw;
   height: 100vh;
@@ -62,22 +60,19 @@ font-size: 50px;
 }
  
 .Tabs {
-  width: 98%;
+  width: 95%;
   overflow-y: auto;
         height: 95%;
-  margin-top: 5px;
-  margin-bottom: 5px;
   background: #053742;
-  margin: 25px;
-  padding: 1rem rem;
+  border-radius: 1rem;
   color: #E8F0F2;
   font-size: large;
   font-weight: bold;
-  border-radius: 2rem;
   @media (max-width: 769px) {
     padding: 2rem 0;
   }
   position: relative;
+  padding: 20px; 
 }
 
 summary{
@@ -93,29 +88,36 @@ aside{
   .Tabs {
     width: 95%;
     overflow-y: auto;
-          height: 800px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+          height: 95%;
     background: #053742;
-    margin: 3.5rem auto 1.5rem;
+    margin: 3rem auto 1.5rem;
     padding: 2rem 1rem;
     color: #E8F0F2;
     font-size: small;
     font-weight: bold;
-    border-radius: 4rem;
+    /* border-radius: 4rem; */
     @media (max-width: 769px) {
       padding: 2rem 0;
     }
     position: relative;
   }
+  .Tabs Section{
+    padding: 8px;
+  }
+
+  .SecondTab li{
+    list-style: square;
+  }
   img{
-    width: 50%;
+    width: 80%;
     height: auto;
   }
   iframe{
-    width: 50%;
+    width: 80%;
     height: auto;
-   
+  }
+  ul.nav li{
+    font-size: medium;
   }
 }
  
@@ -132,6 +134,7 @@ ul.nav {
     width: 90%;
   }
 }
+
  
 ul.nav li {
   width: 50%;
@@ -227,6 +230,7 @@ li{
   font-size: 20px;
   line-height: 1.6;
   font-weight: 450;
+  margin: auto;
 }
 
 .slide-container {
