@@ -63,7 +63,9 @@ font-size: 50px;
   width: 95%;
   overflow-y: auto;
         height: 95%;
-  background: #053742;
+  /* background: #053742; */
+  background: rgb(2,0,36);
+background: linear-gradient(rgba(2,0,36,1) 0%, rgba(5,55,66,1) 35%, rgba(2,0,36,1) 100%);
   border-radius: 1rem;
   color: #E8F0F2;
   font-size: large;
@@ -75,7 +77,7 @@ font-size: 50px;
   padding: 20px; 
 }
 
-summary{
+summary > p{
   line-height: 2;
   text-align: center;
 }
