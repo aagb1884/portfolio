@@ -1,9 +1,14 @@
-const Bingo = () => {
-    return ( 
-        <>
-        <h1>Bingo</h1>
-        </>
-     );
+import HomePage from './Components/Home';
+import Footer from '../Footer';
+
+function App() {
+
+  return (
+    <>
+   <HomePage />
+   <Footer />
+    </>
+  );
 }
- 
-export default Bingo;
+
+export default App;
