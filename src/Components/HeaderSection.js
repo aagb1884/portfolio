@@ -1,7 +1,7 @@
 import Header from "./TitleHeading";
 import AboutMe from "./About Me";
 
-const Footer = () => {
+const Links = () => {
     return ( 
     <header className="header-section">
         <Header />
@@ -20,4 +20,4 @@ const Footer = () => {
      );
 }
  
-export default Footer;
+export default Links;
