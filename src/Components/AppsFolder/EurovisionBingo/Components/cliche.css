@@ -8,6 +8,13 @@ html,body {
     height: 100%; 
 }
 
+.active-buttons-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: true;
+  margin: 20px;
+}
 .eurovision-bingo-landing {
     width: 95%;
     overflow-y: auto;

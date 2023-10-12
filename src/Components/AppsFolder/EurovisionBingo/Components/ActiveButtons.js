@@ -1,6 +1,6 @@
 import './cliche.css'
 import Button from './Button'
-import styled from 'styled-components'
+
 
 function ActiveButtons({ cardArray }) {
 
@@ -9,19 +9,13 @@ function ActiveButtons({ cardArray }) {
   })
 
   return (
-    <Wrapper>
+    <div className='active-buttons-wrapper'>
       {buttons}
-    </Wrapper>
+    </div>
   )
 
 }
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: true;
-  margin: 20px;
-`
+
 
 export default ActiveButtons
