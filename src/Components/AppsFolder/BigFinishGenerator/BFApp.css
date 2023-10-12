@@ -65,6 +65,7 @@ header > h3 {
 
 .clear-all-button{
   margin-top: 5px;
+  background-color: #972C34;
 }
 
 .randomiser {
@@ -97,14 +98,14 @@ aside{
 
 img.main-char-gif,
 img.support-char-gif,
-img.villain.gif,
-img.location.gif{
+img.villain-gif,
+img.location-gif{
   display: block;
   max-width: 200px;
   width: auto;
   height: auto;
   margin: 0 auto;
-  padding: 5px;
+  padding: 10px;
 }
 
 
@@ -124,6 +125,7 @@ img.location.gif{
 }
 
 .button{
+  background-color: #972C34;
   width: 200px;
   position: relative;
   top: 0;
