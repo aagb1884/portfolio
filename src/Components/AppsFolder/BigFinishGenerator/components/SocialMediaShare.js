@@ -13,7 +13,7 @@ const SocialMediaShare = ({pitch}) => {
     const shareTitle = "The Big Finish Boxset Generator";
 
     return ( 
-        <aside>
+        <aside className="bf-aside">
             Share this on your social channels.
             <div className="social-media-share">
         <div className="facebook">

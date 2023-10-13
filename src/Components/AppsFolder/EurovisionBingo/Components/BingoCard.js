@@ -148,7 +148,7 @@ const BingoCard = () => {
             )}
            
             </section>
-           
+           <br />
             <button type="button" data-testid="get-cards-button" id="get-cards" className="btn" onClick={handleGetNewCards}>Get New Card</button>
             <ActiveButtons cardArray={cardArray} />
             <Winning />

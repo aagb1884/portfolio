@@ -3,10 +3,11 @@ import SupportingCharacter from "./components/lists/SupportingCharacter";
 import Villain from "./components/lists/Villain";
 import EventLocation from "./components/lists/Location";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+import BFFooter from "./components/BFFooter";
 import ClearAll from "./components/ClearAll";
 import React, { useState } from 'react';
 import SocialMediaShare from "./components/SocialMediaShare";
+
 
 const Container = () => {
 
@@ -25,7 +26,9 @@ const Container = () => {
     const pitch = `At last, ${mainCharacter} and ${supportingCharacter} meet ${villain} in ${location}!`
 
      return (
+    
         <div className="container">
+        
         <Header />
             <section className="randomiser" data-testid="randomiser">
                 <div className="randomiser-buttons">
@@ -52,8 +55,9 @@ const Container = () => {
 
                 </div>
             </section>
-        <Footer />
+        <BFFooter />
         </div>
+        
      );
 }
  

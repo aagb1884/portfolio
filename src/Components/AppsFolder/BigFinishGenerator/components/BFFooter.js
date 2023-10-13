@@ -1,6 +1,6 @@
 import PithyFooterQuotes from "./lists/PithyFooterQuotes";
 
-const Footer = () => {
+const BFFooter = () => {
     return (  
         <footer className="big-finish-footer">
         <h1>WE LOVE STORIES</h1>
@@ -12,5 +12,5 @@ const Footer = () => {
         </footer>
     );
 }
- 
-export default Footer;
+
+export default BFFooter;

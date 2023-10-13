@@ -12,7 +12,7 @@ const Button = ({ cliche }) => {
                     background: isActive ? '#231557' : '#ff1361',
                     color: isActive ? 'whitesmoke' : 'black'
                 }}
-                className="btn"
+                className="euro-btn"
                 type="button"
                 data-testid="card-button"
             >
