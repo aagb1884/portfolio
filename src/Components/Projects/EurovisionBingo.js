@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import { NavLink } from "react-router-dom";
 
 const EurovisionBingo = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -31,7 +32,7 @@ const EurovisionBingo = () => {
         <br />
         <a href="https://github.com/aagb1884/eurovisionBingo">Github Repo</a>
         <br />
-        <a href="https://poised-step.surge.sh/">Play App Here</a>
+        <NavLink to="/apps/eurovision-bingo">Play App here</NavLink>
         </div>
        
       }
