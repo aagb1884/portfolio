@@ -42,8 +42,7 @@ const WesleyContainer = () => {
 
     function handleInputChange(event) {
         setUserQuery(event.target.value);
-        console.log(event.target.value)
-      }
+    }
 
       function handleClear() {
         setUserQuery('');
