@@ -33,7 +33,7 @@ const ExoWeather = () => {
         <a href="https://github.com/aagb1884/exoWeather">Github Repo</a>
         <br />
         <br />
-        <img src="images/exoWeather_searchScreen.png" width="600" height="400"></img>
+        <img src="images/exoWeather_searchScreen.png" alt='exoWeather search screen' width="600" height="400"></img>
         
         </div>
 }

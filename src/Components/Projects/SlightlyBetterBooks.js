@@ -37,7 +37,7 @@ const SlightlyBetterBooks = () => {
         <a href="https://github.com/aagb1884/capstone_project">Github Repo</a>
         <br />
         <br />
-        <img src="images/home_page copy.png" width="600" height="500"></img>
+        <img src="images/home_page copy.png" alt='slightly better books homepage' width="600" height="500"></img>
         </div>
 }
 </section>

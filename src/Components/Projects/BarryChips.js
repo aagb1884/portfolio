@@ -34,7 +34,7 @@ const BarryChips = () => {
        <a href="https://github.com/aagb1884/solo_project_andrew_blair">Github Repo</a>
         <br />
         <br />
-        <img src="images/barry_chips_homepage.png" width="600" height="400"></img>
+        <img src="images/barry_chips_homepage.png" alt="barry chips homepage"  width="600" height="400"></img>
                 </div>
               
       }

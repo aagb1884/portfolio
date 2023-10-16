@@ -55,7 +55,7 @@ const WesleyContainer = () => {
         if (buttonClicked) {
             get_random_response()
         }
-    }, [buttonClicked])
+    }, [get_random_response])
 
     return ( 
         <main className='main-wesley'>
