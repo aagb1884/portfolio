@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
     return ( 
-        <footer>
+        <nav className="app-page-nav-links">
         <ul>
             <li>
             <NavLink to="/">Home</NavLink>
@@ -11,7 +11,7 @@ const Footer = () => {
             <NavLink to="/apps">Apps</NavLink>
             </li>
         </ul>
-        </footer>
+        </nav>
      );
 }
  

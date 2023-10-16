@@ -60,13 +60,14 @@ const AppsLandingPage = () => {
             
             </div>
             </section>
-
+            <section className="apps-landing-copy">
             <aside className="design-credit">Bouncing Text animation by <a href="https://lenadesign.org/2021/05/18/css-bouncing-text-animation/">Lena Design</a></aside>
             <p>Three React apps; some requiring esoteric knowledge of <i>Doctor Who</i>, others less so.</p>
             <p>You can find more information on each on my <a href="https://github.com/aagb1884">GitHub page</a> (there are individual repos for each project, and a repo for this website which includes updated version).</p>
             <br />
             <aside>NB.Wesley Snopes is probably not suitable for work.</aside>
-        <Footer />    
+            </section>
+            <Footer />    
         </div>
      );
 }

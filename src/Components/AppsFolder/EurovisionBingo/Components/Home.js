@@ -8,6 +8,7 @@ const HomePage = () => {
           <header className="animate-charcter">
             <div className="animated-header">EUROVISION BINGO</div>
           </header>
+
             <main>
               <BingoCard />
             </main>
