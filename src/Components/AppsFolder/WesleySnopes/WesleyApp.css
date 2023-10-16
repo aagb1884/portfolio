@@ -46,6 +46,7 @@ App{
 }
 
 .main-wesley{
+  margin-bottom: 72px;
   padding-bottom: 2.7rem; 
   flex: 1;
   
@@ -102,9 +103,9 @@ App{
 }
 .wesley-footer{
   position: absolute;
-  bottom: 0.3;
+  bottom: 0;
   width: 100%;
-  height: auto;
+  height: 72px;
   min-height: 80px;
   margin-top: 20px;
   display: flex;
