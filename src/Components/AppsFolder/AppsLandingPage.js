@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './appPages.css'
 import Footer from "./Footer";
 
@@ -18,36 +18,36 @@ const AppsLandingPage = () => {
                 <section className="app-buttons-component">
 
                 <div className="eurovision-bingo">   
-                <NavLink to="/apps/eurovision-bingo">
+                <Link to="/apps/eurovision-bingo">
                 
                     <img    src="/images/eurovision_bingo_button.gif" 
                             alt="eurovision-bingo-button" 
                             border="0"
                             className="button-image"/>
                     <div className="button-text">Eurovision Bingo</div>
-                </NavLink>
+                </Link>
                 </div>
 
                 <div className="wesley-snopes">   
-                <NavLink to="/apps/wesley-snopes">
+                <Link to="/apps/wesley-snopes">
                 
                     <img    src="/images/wesleySnopes/button_wesley.png" 
                             alt="wesley-snopes-button" 
                             border="0"
                             className="button-image"/>
                     <div className="button-text">Wesley Snopes</div>
-                </NavLink>
+                </Link>
                 </div>
 
                 <div className="big-finish-generator">   
-                <NavLink to="/apps/big-finish-generator">
+                <Link to="/apps/big-finish-generator">
                 
                     <img    src="/images/bigFinish/untempered_schism.gif" 
                             alt="big-finish-generator-button" 
                             border="0"
                             className="button-image"/>
                     <div className="button-text">Big Finish Generator</div>
-                </NavLink>
+                </Link>
 
                 
                 </div>
