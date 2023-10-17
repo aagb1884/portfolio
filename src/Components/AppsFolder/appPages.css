@@ -1,9 +1,10 @@
 .app-landing-page{
-  position: relative;
+  position: absolute;
   min-height: 100vh;
   background: linear-gradient(rgb(52, 51, 62) 0%, rgb(31, 78, 89) 35%, rgb(47, 40, 183) 100%);
   border-radius: 2px;
   color: #ffff;
+  top: 0;
 }
 
 .page-content{
