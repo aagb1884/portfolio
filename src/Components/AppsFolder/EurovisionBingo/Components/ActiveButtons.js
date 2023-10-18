@@ -2,11 +2,27 @@ import './cliche.css'
 import Button from './Button'
 
 
-function ActiveButtons({ cardArray }) {
+function ActiveButtons({ cardArray, isActive, setIsActive }) {
 
-  const buttons = cardArray.map((clicheStr, index) => {
-    return <Button cliche={clicheStr} key={index} />
-  })
+
+  const toggleButton = (cliche) => {
+    setIsActive(prevState => ({
+      ...prevState,
+      [cliche]: !prevState[cliche]
+    }));
+  };
+
+  const buttons = cardArray.map((cliche, index) => {
+      return (
+        <Button
+          key={index}
+          cliche={cliche}
+          isActive={isActive[cliche] || false}
+          setIsActive={() => toggleButton(cliche)}
+        />
+      );
+    });
+
 
   return (
     <div className='active-buttons-wrapper'>

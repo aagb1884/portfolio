@@ -1,24 +1,26 @@
-import { useState } from 'react'
 
-const Button = ({ cliche }) => {
 
-    const [isActive, setIsActive] = useState(false)
+const Button = ({ cliche, isActive, setIsActive }) => {
+
+    const handleClick = () => {
+        setIsActive(!isActive);
+        setButtonsState(prevState => ({
+    ...prevState,
+    [buttonId]: !prevState[buttonId]
+  }));
+      };
 
     return (
-        <div className="grid-item">
-            <button
-                onClick={() => setIsActive(isActive ? false : true)}
-                style={{
-                    background: isActive ? '#231557' : '#ff1361',
-                    color: isActive ? 'whitesmoke' : 'black'
-                }}
-                className="euro-btn"
-                type="button"
-                data-testid="card-button"
-            >
-                {cliche}
-            </button>
-        </div>
+        <div className={`grid-item ${isActive ? 'active' : ''}`}>
+        <button
+          onClick={handleClick}
+          className="euro-btn"
+          type="button"
+          data-testid="card-button"
+        >
+          {cliche}
+        </button>
+      </div>
 
     );
 }

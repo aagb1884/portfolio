@@ -10,6 +10,7 @@ export const handleGetNewCards = (EurovisionClicheArray) => {
 
 const BingoCard = () => {
     const [isHovering, setIsHovering] = useState(false);
+    const [isActive, setIsActive] = useState(false);
 
     const EurovisionClicheArray = [
         'ciabatta smelling hipster\'s folksy simpering',
@@ -113,6 +114,7 @@ const BingoCard = () => {
 
     const handleGetNewCards = () => {
         setCardArray(getCliches(EurovisionClicheArray, 6));
+        setIsActive(false);
     }
 
     const handleMouseOver = () => {
@@ -150,8 +152,12 @@ const BingoCard = () => {
             </section>
            <br />
             <button type="button" data-testid="get-cards-button" id="get-cards" className="btn" onClick={handleGetNewCards}>Get New Card</button>
-            <ActiveButtons cardArray={cardArray} />
-            <Winning />
+            <ActiveButtons 
+            isActive={isActive}
+            setIsActive={setIsActive}
+            cardArray={cardArray} 
+            />
+            <Winning  />
         </section>
     );
 }

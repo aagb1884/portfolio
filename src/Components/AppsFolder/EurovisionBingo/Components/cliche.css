@@ -92,6 +92,7 @@ html,body {
     color: whitesmoke;
   }
 
+
 #get-cards{
     display: flex;
     justify-items: center;
@@ -169,6 +170,13 @@ html,body {
 
 .grid-item:active {
     color: #000
+}
+.grid-item.active  > .euro-btn{
+  top: 2px;
+  left: 1px;
+  box-shadow: none;
+  background-color: #231557;
+  color: whitesmoke;
 }
 
 .grid-item:active:after {
