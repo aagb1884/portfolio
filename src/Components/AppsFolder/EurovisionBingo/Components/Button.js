@@ -1,13 +1,7 @@
-
-
 const Button = ({ cliche, isActive, setIsActive }) => {
 
     const handleClick = () => {
         setIsActive(!isActive);
-        setButtonsState(prevState => ({
-    ...prevState,
-    [buttonId]: !prevState[buttonId]
-  }));
       };
 
     return (
