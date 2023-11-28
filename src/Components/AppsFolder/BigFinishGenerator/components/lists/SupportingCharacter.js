@@ -22,7 +22,8 @@ const SupportingCharacter = ({supportingCharacter, setSupportingCharacter}) => {
         'CyberBrig',
         'the Afghan kid Danny Pink killed',
         'the cow the Doctor asked about time scanners',
-        "Maria's Dad"
+        "Maria's Dad",
+        "Nerys"
     ];
 
     
