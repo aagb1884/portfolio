@@ -33,6 +33,9 @@ const Tabs = () => {
           </TabContent>
         </div>
       </div>
+      <div className="ko-fi">
+        <a href='https://ko-fi.com/W7W1URM7B' target='_blank'><img height='36' src='https://storage.ko-fi.com/cdn/kofi4.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+        </div>
     </div>
   );
 };

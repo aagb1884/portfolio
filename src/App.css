@@ -70,6 +70,13 @@ font-size: 50px;
   padding: 20px; 
 }
 
+.ko-fi {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 5%
+}
+
 
 summary > p{
   line-height: 2;

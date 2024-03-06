@@ -48,17 +48,30 @@ const AppsLandingPage = () => {
                             className="button-image"/>
                     <div className="button-text">Big Finish Generator</div>
                 </Link>
+                </div>
 
+                <div className="derek-adams">   
+                <Link to="https://derek-adams-simulator.vercel.app/">
                 
+                    <img    src="/images/deekPrime.jpg" 
+                            alt="derek-adams-simulator-button" 
+                            border="0"
+                            className="button-image"/>
+                    <div className="button-text">Derek Adams Management Simulator</div>
+                </Link>
                 </div>
                 </section>
                 <section className="apps-landing-copy">
                 <aside className="design-credit">Bouncing Text animation by <a href="https://lenadesign.org/2021/05/18/css-bouncing-text-animation/">Lena Design</a></aside>
                 <p>Three React apps; some requiring esoteric knowledge of <i>Doctor Who</i>, others less so.</p>
-                <p>You can find more information on each on my <a href="https://github.com/aagb1884">GitHub page</a> (there are individual repos for each project, and a repo for this website which includes modified versions).</p>
+                <p>You can find more information on each on my <a href="https://github.com/aagb1884">GitHub page</a>.</p>
                 <br />
-                <aside>NB. Wesley Snopes is probably not suitable for work.</aside>
+                <aside>NB. <i>Wesley Snopes</i> and <i>Derek Adams Management Simulator</i> probably not suitable for work.</aside>
+                <aside><i>Derek Adams Management Simulator</i> links to an external site.</aside>
                 </section>
+            </div>
+            <div className="ko-fi">
+                 <a href='https://ko-fi.com/W7W1URM7B' target='_blank'><img height='36' src='https://storage.ko-fi.com/cdn/kofi4.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
             </div>
             <div className="landing-footer">
             <Footer />  
