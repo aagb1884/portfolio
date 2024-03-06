@@ -6,13 +6,13 @@ const AppsLandingPage = () => {
     return ( 
         <div className="app-landing-page">
             <div className="page-content">
-                <div class="bouncing-text">
-                    <div class="d">D</div>
-                    <div class="a">A</div>
-                    <div class="f">F</div>
-                    <div class="t">T</div>
-                    <div class="space"></div>
-                    <div class="wee-apps">WEE APPS</div>
+                <div className="bouncing-text">
+                    <div className="d">D</div>
+                    <div className="a">A</div>
+                    <div className="f">F</div>
+                    <div className="t">T</div>
+                    <div className="space"></div>
+                    <div className="wee-apps">WEE APPS</div>
                 </div>
 
                 <section className="app-buttons-component">

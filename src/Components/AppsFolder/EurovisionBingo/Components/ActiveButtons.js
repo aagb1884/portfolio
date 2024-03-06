@@ -2,7 +2,7 @@ import './cliche.css'
 import Button from './Button'
 
 
-function ActiveButtons({ cardArray, isActive, setIsActive }) {
+function ActiveButtons({ cardArray, isActive, setIsActive, setNumberOfActiveCardButtons, numberOfActiveCardButtons, checkIfBingoButtonIsActive}) {
 
 
   const toggleButton = (cliche) => {
@@ -12,6 +12,8 @@ function ActiveButtons({ cardArray, isActive, setIsActive }) {
     }));
   };
 
+
+
   const buttons = cardArray.map((cliche, index) => {
       return (
         <Button
@@ -19,9 +21,14 @@ function ActiveButtons({ cardArray, isActive, setIsActive }) {
           cliche={cliche}
           isActive={isActive[cliche] || false}
           setIsActive={() => toggleButton(cliche)}
+          setNumberOfActiveButtons={setNumberOfActiveCardButtons}
+          numberOfActiveButtons={numberOfActiveCardButtons}
+          checkIfBingoButtonIsActive={checkIfBingoButtonIsActive}
         />
       );
     });
+
+    
 
 
   return (

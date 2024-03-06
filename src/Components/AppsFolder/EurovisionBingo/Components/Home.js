@@ -1,6 +1,8 @@
 import BingoCard from "./BingoCard";
 
 const HomePage = () => {
+
+  
     return ( 
       <div className="eurovision-bingo-landing">
         
