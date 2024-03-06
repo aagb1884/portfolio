@@ -11,7 +11,8 @@ const PithyFooterQuotes = () => {
         "'i can't believe i just tried this and got close to a genuine leak' - BigFinishInsider",
         'bob baker somehow keeps pitching us k9 stuff',
         "Eccleston scares us",
-        "If the russian federation is reading this, we're interested"
+        "If the russian federation is reading this, we're interested",
+        "if McGann gets his own tv series we're recasting him"
     ];
 
         const randomIndex = Math.floor(Math.random() * footerQuotes.length);

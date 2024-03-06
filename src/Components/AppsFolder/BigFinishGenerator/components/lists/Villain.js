@@ -20,7 +20,8 @@ const Villain = ({villain, setVillain}) => {
         'all the Kraals',
         'Mysterious Man',
         'the Shansheeth',
-        'a Hypnotron'
+        'a Hypnotron',
+        'woke Davros'
     ];
 
     const [showGif, setShowGif] = useState(false);
