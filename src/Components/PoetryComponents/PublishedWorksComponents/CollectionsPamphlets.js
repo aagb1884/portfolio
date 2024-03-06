@@ -8,6 +8,8 @@ const CollectionsPamphlets = () => {
         <a href="https://emmalee1.wordpress.com/2020/11/04/the-r-pattz-facttz-andrew-blair-speculative-books-book-review/">Emma Lee Review</a><br/>
         <a href="https://www.sphinxreview.co.uk/index.php/opoi-reviews-2020/andrew-blair-the-r-pattz-facttz">OPOI Review</a>
         </li>
+        <li><i>An Intense Young Man at An Open Mic Night</i>, 2024 (Self-Published) <a href="https://ko-fi.com/s/582ed13a4b">[Buy Here]</a><br />
+        </li>
       </ul>
     </section> );
 }
