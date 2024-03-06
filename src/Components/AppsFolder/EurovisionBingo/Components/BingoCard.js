@@ -3,21 +3,23 @@ import Winning from "./Winning";
 import ActiveButtons from "./ActiveButtons";
 import {useState} from 'react';
 
-export const handleGetNewCards = (EurovisionClicheArray) => {
-    const shuffled = [...EurovisionClicheArray].sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, 6);
-}
-
 const BingoCard = () => {
     const [isHovering, setIsHovering] = useState(false);
     const [isActive, setIsActive] = useState(false);
-    const [numberOfActiveCardButtons, setNumberOfActiveCardButtons] = useState(0);
-    const [isBingoButtonActive, setIsBingoButtonActive] = useState(false)
+    const [isBingoButtonActive, setIsBingoButtonActive] = useState(false);
+   
 
     const EurovisionClicheArray = [
         'ciabatta smelling hipster\'s folksy simpering',
         'power ballad delivered by woman nailed to the floor',
         'nul points',
+        'the singer has made a tiktok for the IDF',
+        'simple staging',
+        'jerky stop-motion dancing',
+        'heavily symbolic tree',
+        'former winner does a song',
+        'former winner does some banter',
+        'abba',
         'graham norton gives up',
         'graham norton is genuinely surprised',
         'graham norton mentions the staging',
@@ -42,7 +44,7 @@ const BingoCard = () => {
         'backing singer really going for it',
         'singer in green room notices they\'re on camera and pleads for votes',
         'actual tears',
-        'parp',
+        'parping',
         'traditional instrument',
         'singer looks into the camera',
         'singer brings in clenched fist',
@@ -69,10 +71,10 @@ const BingoCard = () => {
         'ska',
         'gymnasts from the ceiling',
         'riverdance (mention of)',
-        'riverdance (the actual dance)',
+        'riverdance (actual dance)',
         'ANOTHER KEY CHANGE',
         'dubstep breakdown',
-        'the band are related to each other',
+        'band are related to each other',
         'lyrics like "bingy bongy boogy bongy"',
         'matching outfits',
         'running on the spot',
@@ -117,8 +119,7 @@ const BingoCard = () => {
     const handleGetNewCards = () => {
         setCardArray(getCliches(EurovisionClicheArray, 6));
         setIsActive(false);
-        setNumberOfActiveCardButtons(0);
-    }
+        }
 
     const handleMouseOver = () => {
         setIsHovering(true);
@@ -127,57 +128,43 @@ const BingoCard = () => {
         setIsHovering(false);
     }
 
-    const checkIfBingoButtonIsActive = () => {
-        if (numberOfActiveCardButtons === 5) {
-            setIsBingoButtonActive(true)
-            console.log('bingo is active')
-        } else
-        {
-            setIsBingoButtonActive(false)
-        }
-    }
-
-    return (
+      return (
         <section className='card-wrapper'>
           
-            <section className='how-to-use-app'>
-           
-            <header
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
-            >
-            <h2>How does this work then?</h2>
-            </header>
+                    <section className='how-to-use-app'>
+                
+                    <header
+                    onMouseOver={handleMouseOver}
+                    onMouseOut={handleMouseOut}
+                    >
+                    <h2>How does this work then?</h2>
+                    </header>
 
-            {isHovering && (
-            <div className='instructions-ul'>
-        <ul>
-            <li>Every time you click 'Get New Card' or refresh the page, you get six new Eurovision cliches.</li>
-            <li>Every time you see or hear one of your cliches on screen during Eurovision, click it.</li>
-            <li>The aim is to click all six.</li>
-            <li>When you have got all six, make sure the sound is on on your device and click 'Bingo'.</li>
-            <li>Play as many times as you want.</li>
-            <li>To remove this message either move or click away from it.</li>
-        </ul>
-                </div>
-            )}
-           
-            </section>
+                    {isHovering && (
+                    <div className='instructions-ul'>
+                <ul>
+                    <li>Every time you click 'Get New Card' or refresh the page, you get six new Eurovision cliches.</li>
+                    <li>Every time you see or hear one of your cliches on screen during Eurovision, click it.</li>
+                    <li>The aim is to click all six.</li>
+                    <li>When you have got all six, make sure the sound is on on your device and click 'Bingo'.</li>
+                    <li>Play as many times as you want.</li>
+                    <li>To remove this message either move or click away from it.</li>
+                </ul>
+                        </div>
+                    )}
+                
+                    </section>
+
            <br />
             <button type="button" data-testid="get-cards-button" id="get-cards" className="btn" onClick={handleGetNewCards}>Get New Card</button>
             <ActiveButtons 
             isActive={isActive}
             setIsActive={setIsActive}
             cardArray={cardArray} 
-            numberOfActiveCardButtons={numberOfActiveCardButtons}
-            setNumberOfActiveCardButtons={setNumberOfActiveCardButtons}
-            checkIfBingoButtonIsActive={checkIfBingoButtonIsActive}
+            setIsBingoButtonActive={setIsBingoButtonActive}
             />
             <Winning  
-            numberOfActiveCardButtons={numberOfActiveCardButtons}
-            setIsBingoButtonActive={setIsBingoButtonActive}
             isBingoButtonActive={isBingoButtonActive}
-            
             />
         </section>
     );
