@@ -5,6 +5,12 @@ const Button = ({ cliche, isActive, setIsActive, numberOfActiveButtons, setNumbe
         addActiveButtons();
         checkIfBingoButtonIsActive();
         console.log(numberOfActiveButtons)
+
+const Button = ({ cliche, isActive, setIsActive }) => {
+
+    const handleClick = () => {
+        setIsActive(!isActive);
+
       };
 
     const addActiveButtons = () => {

@@ -23,7 +23,8 @@ const MainCharacter = ({mainCharacter, setMainCharacter}) => {
         'Morton Dill',
         'Tallulah and Laszlo',
         'Doctor Pastry',
-        'Bessie'
+        'Bessie',
+        'The Shadow Proclamation'
     ];
 
   
