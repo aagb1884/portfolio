@@ -232,6 +232,11 @@ code {
 .animated-header{
  align-items: center;
  justify-content: center;
+ margin-bottom: 5px;
+}
+
+header {
+  margin-top: 5px;
 }
 
 .animate-character
