@@ -54,7 +54,7 @@ const EventLocation = ({location, setLocation}) => {
 
     return ( 
         <div>
-            <button type="button" data-testid="location-button" className="button" onClick={handleButtonClick}>Get Location</button>
+            <button type="bfbutton" data-testid="location-button" className="bfbutton" onClick={handleButtonClick}>Get Location</button>
             {showGif && <img className="location-gif" src="/images/bigFinish/rtd_titles.gif" alt="GIF" />} 
         </div>
     );

@@ -70,6 +70,18 @@ font-size: 50px;
   padding: 20px; 
 }
 
+.contact-form {
+  text-align: center;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+Form {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+}
+
 .ko-fi {
   display: flex;
   flex-direction: row;
@@ -147,13 +159,58 @@ a:hover {
   color: hotpink;
 }
 
-button {
+/* button {
   padding: 8px 20px;
   background-color: #4CAF50;
   color: white;
   border: none;
   cursor: pointer;
   margin-right: 10px;
+} */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 80%;
+  padding: 10px;
+}
+
+.contact-form-header-button {
+  padding: 8px 20px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.contact-form-button-div {
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.contact-form-submit {
+  padding: 8px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.contact-form-close {
+  padding: 8px 20px;
+  background-color: #af4c4c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.message-text-area {
+ display: flex;
+ justify-content: center;
+ min-width: 80%;
 }
 
 p {

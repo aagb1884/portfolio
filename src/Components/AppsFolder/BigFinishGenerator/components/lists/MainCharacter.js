@@ -59,7 +59,7 @@ const MainCharacter = ({mainCharacter, setMainCharacter}) => {
 
     return ( 
         <div>
-            <button type="button" data-testid="main-character-button" className="button" onClick={handleButtonClick}>Get Main Character</button>
+            <button type="bfbutton" data-testid="main-character-button" className="bfbutton" onClick={handleButtonClick}>Get Main Character</button>
             {showGif && <img className="main-char-gif" src="/images/bigFinish/untempered_schism.gif" alt="GIF" />} 
         </div>
     );

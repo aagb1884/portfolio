@@ -5,15 +5,21 @@ import FirstTab from "../AllTabs/FirstTab";
 import SecondTab from "../AllTabs/SecondTab";
 import ThirdTab from "../AllTabs/ThirdTab";
 import Links from "../HeaderSection";
+import ContactForm from "../ContactForm";
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("tab1");
-  
+  const [showForm, setShowForm] = useState(false)
 
   return (
 <div className="Tabs">
         <div className="tab-content-heading">
-        <Links />
+        <Links 
+        showForm={showForm}
+        setShowForm={setShowForm} />
+        <div className="form">
+            {showForm && <ContactForm setShowForm={setShowForm} />}
+          </div>
         <ul className="nav">
           <TabNavItem title="Software Development" id="tab1" activeTab={activeTab} setActiveTab={setActiveTab}/>
           <TabNavItem title="Freelance Writing" id="tab2" activeTab={activeTab} setActiveTab={setActiveTab}/>

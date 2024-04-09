@@ -56,7 +56,7 @@ const Villain = ({villain, setVillain}) => {
 
     return ( 
         <div>
-            <button type="button" data-testid="villain-button" className="button" onClick={handleButtonClick}>Get Villain</button>
+            <button type="button" data-testid="villain-button" className="bfbutton" onClick={handleButtonClick}>Get Villain</button>
             {showGif && <img className="villain-gif" src="/images/bigFinish/mccoy_titles.gif" alt="GIF" />} 
         </div>
     );
