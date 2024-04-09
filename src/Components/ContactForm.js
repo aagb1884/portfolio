@@ -36,7 +36,7 @@ return (
           id='form-input-control-email'
           control={Input}
           label='Email'
-          name='user_email'
+          name='from_email'
           placeholder='Email…'
           required
           icon='mail'
@@ -46,7 +46,7 @@ return (
           id='form-input-control-last-name'
           control={Input}
           label='Name'
-          name='user_name'
+          name='from_name'
           placeholder='Name…'
           required
           icon='user circle'
@@ -57,7 +57,7 @@ return (
           id='form-textarea-control-opinion'
           control={TextArea}
           label='Message'
-          name='user_message'
+          name='message'
           placeholder='Message…'
           required
           style={{ display: 'flex', flexDirection: 'column', 

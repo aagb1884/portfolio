@@ -186,9 +186,10 @@ a:hover {
 }
 
 .contact-form-button-div {
-  padding: 15px;
+  margin: 20px;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
 }
 .contact-form-submit {
   padding: 8px 20px;
@@ -196,7 +197,8 @@ a:hover {
   color: white;
   border: none;
   cursor: pointer;
-  margin-right: 10px;
+  margin: 10px;
+  
 }
 .contact-form-close {
   padding: 8px 20px;
@@ -204,13 +206,13 @@ a:hover {
   color: white;
   border: none;
   cursor: pointer;
-  margin-right: 10px;
+  margin: 10px;
 }
 
 .message-text-area {
  display: flex;
  justify-content: center;
- min-width: 80%;
+ min-width: 50%;
 }
 
 p {
