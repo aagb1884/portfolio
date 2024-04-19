@@ -36,10 +36,10 @@ font-size: 50px;
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  /* justify-content: space-around;
   align-content: center;
   align-items: stretch;
-  text-align: center;
+  text-align: center; */
   padding: 15px;
   
 }
@@ -68,6 +68,12 @@ font-size: 50px;
   }
   position: relative;
   padding: 20px; 
+}
+
+Form {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .ko-fi {
@@ -147,13 +153,62 @@ a:hover {
   color: hotpink;
 }
 
-button {
+/* button {
   padding: 8px 20px;
   background-color: #4CAF50;
   color: white;
   border: none;
   cursor: pointer;
   margin-right: 10px;
+} */
+
+.contact-form {
+  text-align: center;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 80%;
+  padding: 10px;
+}
+
+.contact-form-header-button {
+  padding: 8px 20px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.contact-form-button-div {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-form-submit {
+  padding: 8px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  
+}
+.contact-form-close {
+  padding: 8px 20px;
+  background-color: #af4c4c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.message-text-area {
+ display: flex;
+ justify-content: center;
+ min-width: 50%;
 }
 
 p {
