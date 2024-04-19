@@ -58,7 +58,7 @@ const SupportingCharacter = ({supportingCharacter, setSupportingCharacter}) => {
 
     return ( 
         <div>
-            <button type="button" data-testid="supporting-character-button" className="button" onClick={handleButtonClick}>Get Supporting Character</button>
+            <button type="button" data-testid="supporting-character-button" className="bfbutton" onClick={handleButtonClick}>Get Supporting Character</button>
             {showGif && <img className="support-char-gif" src="/images/bigFinish/capaldi_clocks.gif" alt="GIF" />} 
         </div>
     );
