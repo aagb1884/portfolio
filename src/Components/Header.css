@@ -1,0 +1,23 @@
+.fancy {
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    background-image: 
+      url("https://www.publicdomainpictures.net/pictures/480000/nahled/sternenhimmel-sterne-himmel-nacht-1668774086Mem.jpg");
+    background-size: 110% auto;
+    background-position: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+	animation: parallax 60s ease infinite alternate;
+  }
+}
+@keyframes parallax {
+	0% {
+	  background-position: 0 0;
+	}
+	70% {
+	  background-position: 80 200px;
+	}
+  }
+
+
+  
