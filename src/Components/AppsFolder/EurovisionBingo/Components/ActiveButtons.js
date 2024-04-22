@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Button from './Button';
 
 const ActiveButtons = ({ cardArray, buttonStates, handleClick }) => {
