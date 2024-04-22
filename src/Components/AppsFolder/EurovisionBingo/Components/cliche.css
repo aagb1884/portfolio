@@ -417,6 +417,9 @@ header {
     height: 180%;
     
   }
+  .euro-btn {
+    font-size: large;
+   }
 }
 
 
@@ -427,9 +430,7 @@ header {
     .animate-character{
       min-height: 42px;
    }
-   .euro-btn{
-    font-size: large;
-   }
+   
   }
 .animate-sub
 {

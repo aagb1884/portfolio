@@ -32,6 +32,10 @@ font-size: 50px;
   text-align: center;
   }
 
+.links{
+  justify-content: center;
+  margin-left: 15px;
+}
 .header-section > nav > ul {
   list-style: none;
   display: flex;
@@ -326,6 +330,9 @@ li{
 @media (max-width: 500px) {
   .slide-image {
     width: 500px;
+  }
+  .links{
+    margin-left: 75px;
   }
 }
 
