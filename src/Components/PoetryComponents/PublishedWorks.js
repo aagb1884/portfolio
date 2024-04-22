@@ -12,19 +12,20 @@ const PublishedWorks = () => {
   };
 
     return (  
-        <div className='published-works'>
+        <section className='published-works'>
         <h2 onClick={toggleVisibility}>Published Works</h2>
         {isVisible && 
-            <p>
+            <div className="published-works-list">
+      <br />
        <CollectionsPamphlets />
       <br />
       <iframe width="560" height="315" src="https://www.youtube.com/embed/AWgccb62epU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br />
       <br />
       <Anthologies />
       <Journals />
-      </p>
-      }
       </div>
+      }
+      </section>
     );
 }
  
