@@ -33,6 +33,8 @@ const WesleyContainer = () => {
     const [userQuery, setUserQuery] = useState('');
     const [buttonClicked, setButtonClicked] = useState(false);
 
+    console.log(userQuery)
+
     function get_random_response() {
         const randomIndex = Math.floor(Math.random()* imgsrcs.length);
         const selectedImage = imgsrcs[randomIndex]
@@ -52,7 +54,7 @@ const WesleyContainer = () => {
 
       useEffect(()=>{
         if (buttonClicked) {
-            get_random_response()
+            get_random_response();
         }
     }, [get_random_response])
 
