@@ -2,7 +2,9 @@ If you're trying to get on to my portfolio site, and are instead looking at this
 
 # How I Built This
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). You can clone this branch of the repo, then run 'npm install' in the command line, to view it locally.
+
+I used [this Madeline Corman blog](https://medium.com/@madelinecorman/deploying-your-react-app-with-github-pages-and-adding-a-godaddy-custom-domain-name-50a99accd455) as a guide to hosting it using GitHub pages and a custom domain. However you need to combine the instructions there with [this Stack Overflow query](https://stackoverflow.com/questions/44484377/hosting-gh-pages-on-custom-domain-white-empty-page) otherwise you will just get a blank screen.
 
 ## Additional Reference Points
 
