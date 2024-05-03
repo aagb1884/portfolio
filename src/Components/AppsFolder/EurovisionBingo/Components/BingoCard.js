@@ -162,6 +162,7 @@ const BingoCard = () => {
                     <li>Play as many times as you want.</li>
                     <li>To remove this message either move or click away from it.</li>
                 </ul>
+                
                         </div>
                     )}
                 
