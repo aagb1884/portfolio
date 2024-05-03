@@ -1,3 +1,4 @@
+import EuroBingoAppLinks from "../../eBingoAppLinks";
 import BingoCard from "./BingoCard";
 
 const HomePage = () => {
@@ -13,7 +14,7 @@ const HomePage = () => {
               <BingoCard />
             </main>
         
-  
+        <EuroBingoAppLinks />
       </div>
      );
 }

@@ -5,6 +5,8 @@
   border-radius: 2px;
   color: #ffff;
   top: 0;
+  overflow-y: auto;
+        height: 100%;
 }
 
 .apps-landing-copy{
@@ -39,8 +41,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* background-color: rgb(255, 255, 255, 0.6); */
-  height: 30px;
+  
   min-height: 3rem;
 }
 
@@ -59,6 +60,30 @@
     position: relative;
     text-align: center;
   }
+
+.app-store-div > p{
+  text-align: center;
+}
+
+.app-store-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 40px;
+}
+
+.ios-app-store-logo{
+  width: 40px;
+}
+
+.google-play-logo{
+  max-width: 150px;
+  width: auto;
+}
+
+.home-link {
+  text-align: center;
+}
 
 
 .button-image {
@@ -202,6 +227,8 @@
   }
 
   .landing-footer{
+    /* position: absolute;
+    bottom: 0; */
     min-height: 1.5rem;
     margin-top: 10%;
   }

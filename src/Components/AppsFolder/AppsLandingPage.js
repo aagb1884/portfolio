@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import './appPages.css'
 import Footer from "./Footer";
+import EuroBingoAppLinks from "./eBingoAppLinks";
 
 const AppsLandingPage = () => {
     return ( 
@@ -63,18 +64,24 @@ const AppsLandingPage = () => {
                 </section>
                 <section className="apps-landing-copy">
                 <aside className="design-credit">Bouncing Text animation by <a href="https://lenadesign.org/2021/05/18/css-bouncing-text-animation/">Lena Design</a></aside>
-                <p>Three React apps; some requiring esoteric knowledge of <i>Doctor Who</i>, others less so.</p>
+                <p>Four React apps; some requiring esoteric knowledge of <i>Doctor Who</i>, others less so.</p>
                 <p>You can find more information on each on my <a href="https://github.com/aagb1884">GitHub page</a>.</p>
                 <br />
-                <aside>NB. <i>Wesley Snopes</i> and <i>Derek Adams Management Simulator</i> probably not suitable for work.</aside>
+                <aside>NB. <i>Wesley Snopes</i> and <i>Derek Adams Management Simulator</i> are probably not suitable for work.</aside>
                 <aside><i>Derek Adams Management Simulator</i> links to an external site.</aside>
+               <EuroBingoAppLinks />
+               
                 </section>
             </div>
+            <div className="home-link">
+            <Link to="/">Home</Link>
+            </div>
             <div className="ko-fi">
+                
                  <a href='https://ko-fi.com/W7W1URM7B' target='_blank' rel="noopener noreferrer"><img height='36' src='https://storage.ko-fi.com/cdn/kofi4.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
             </div>
             <div className="landing-footer">
-            <Footer />  
+             
             </div>  
         </div>
      );
