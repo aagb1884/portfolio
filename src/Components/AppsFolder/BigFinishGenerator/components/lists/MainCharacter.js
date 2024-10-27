@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-const MainCharacter = ({mainCharacter, setMainCharacter}) => {
+const MainCharacter = ({setMainCharacter, setShowGif, setGif}) => {
 
     const mainCharacters = [
         'The Tenth Doctor',
@@ -27,8 +27,6 @@ const MainCharacter = ({mainCharacter, setMainCharacter}) => {
         'The Shadow Proclamation'
     ];
 
-  
-    const [showGif, setShowGif] = useState(false);
     const previousCharacter = useRef(null);
 
     function get_random_main_character() {
@@ -48,7 +46,7 @@ const MainCharacter = ({mainCharacter, setMainCharacter}) => {
     function handleButtonClick() {
         setShowGif(true);
         audio.play()
-
+        setGif("/images/bigFinish/untempered_schism.gif")
         setTimeout(() => {
             get_random_main_character();
             audio.pause();
@@ -60,7 +58,6 @@ const MainCharacter = ({mainCharacter, setMainCharacter}) => {
     return ( 
         <div>
             <button type="bfbutton" data-testid="main-character-button" className="bfbutton" onClick={handleButtonClick}>Get Main Character</button>
-            {showGif && <img className="main-char-gif" src="/images/bigFinish/untempered_schism.gif" alt="GIF" />} 
         </div>
     );
 }

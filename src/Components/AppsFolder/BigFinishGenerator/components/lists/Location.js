@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 
-const EventLocation = ({location, setLocation}) => {
+const EventLocation = ({setLocation, setShowGif, setGif}) => {
 
     const eventLocation = [
         'a lift',
@@ -23,8 +23,6 @@ const EventLocation = ({location, setLocation}) => {
         "harry sullivan's infanticide maze"
     ];
 
-   
-    const [showGif, setShowGif] = useState(false);
     const previousLocation = useRef(null)
 
     function get_random_location() {
@@ -43,7 +41,7 @@ const EventLocation = ({location, setLocation}) => {
     function handleButtonClick() {
         setShowGif(true);
         audio.play();
-
+        setGif("/images/bigFinish/rtd_titles.gif");
         setTimeout(() => {
             get_random_location();
             audio.pause();
@@ -55,7 +53,6 @@ const EventLocation = ({location, setLocation}) => {
     return ( 
         <div>
             <button type="bfbutton" data-testid="location-button" className="bfbutton" onClick={handleButtonClick}>Get Location</button>
-            {showGif && <img className="location-gif" src="/images/bigFinish/rtd_titles.gif" alt="GIF" />} 
         </div>
     );
 }

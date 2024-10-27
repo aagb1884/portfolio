@@ -15,6 +15,8 @@ const Container = () => {
     const [supportingCharacter, setSupportingCharacter] = useState("");
     const [villain, setVillain] = useState("");
     const [location, setLocation] = useState("");
+    const [showGif, setShowGif] = useState(false);
+    const [gif, setGif] = useState("");
 
     function clearAll() {
         setMainCharacter("");
@@ -32,28 +34,52 @@ const Container = () => {
         <Header />
             <section className="randomiser" data-testid="randomiser">
                 <div className="randomiser-buttons">
-                    <div><MainCharacter mainCharacter={mainCharacter} setMainCharacter={setMainCharacter} /></div>
+                    <div className="gif-window">
+                    {showGif && <img className="gif-image" src={gif} alt="GIF" />} 
+                    <div className="first-row">
+                    <div><MainCharacter 
+                    setMainCharacter={setMainCharacter}
+                    setShowGif={setShowGif}
+                    setGif={setGif} /></div>
                     
-                    <div><SupportingCharacter supportingCharacter={supportingCharacter} setSupportingCharacter={setSupportingCharacter} /></div>
+                    <div><SupportingCharacter 
+                    setSupportingCharacter={setSupportingCharacter}
+                    setShowGif={setShowGif}
+                    setGif={setGif}  /></div>
+                    </div>
+
+                    <div className="second-row">
+                    <div><Villain 
+                    setVillain={setVillain}
+                    setShowGif={setShowGif}
+                    setGif={setGif}  /></div>
                     
-                    <div><Villain villain={villain} setVillain={setVillain} /></div>
-                    
-                    <div><EventLocation location={location} setLocation={setLocation} /></div>
+                    <div><EventLocation 
+                    setLocation={setLocation} 
+                    setShowGif={setShowGif}
+                    setGif={setGif} /></div>
+                    </div>
+
+                    </div>
                 </div>
                 <div className="generated-story">
+                {!mainCharacter && !supportingCharacter && !villain && !location && (
+                 <p>Press all four buttons to get your next pitch.</p>
+                )}
                 {mainCharacter && <p className='main-character'>At last, {mainCharacter}</p>}
                 {supportingCharacter && <p className='supporting-character'>and {supportingCharacter}</p>}
                 {villain && <p className='villain'>will meet {villain}</p>}
                 {location && <p className='location'>in {location}</p>}
                 </div>
-
+                
+                {(mainCharacter || supportingCharacter || villain || location) && (
                 <div className="additional-button">
-                    
+               
                     <ClearAll clearAll={clearAll} />
-                    
-                    <SocialMediaShare pitch={pitch} />
-
+                
+                    <SocialMediaShare pitch={pitch} />   
                 </div>
+                 )}  
             </section>
         <BFFooter />
         </div>

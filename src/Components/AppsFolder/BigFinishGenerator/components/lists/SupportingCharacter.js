@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 
-const SupportingCharacter = ({supportingCharacter, setSupportingCharacter}) => {
+const SupportingCharacter = ({setSupportingCharacter, setShowGif, setGif}) => {
 
     const supportingCharacters = [
         'Pigbin Josh',
@@ -26,8 +26,6 @@ const SupportingCharacter = ({supportingCharacter, setSupportingCharacter}) => {
         "Nerys"
     ];
 
-    
-    const [showGif, setShowGif] = useState(false);
     const previousCharacter = useRef(null);
 
     function get_random_supporting_character() {
@@ -47,7 +45,7 @@ const SupportingCharacter = ({supportingCharacter, setSupportingCharacter}) => {
     function handleButtonClick() {
         setShowGif(true);
         audio.play();
-
+        setGif("/images/bigFinish/capaldi_clocks.gif");
         setTimeout(() => {
             get_random_supporting_character();
             audio.pause();
@@ -59,7 +57,6 @@ const SupportingCharacter = ({supportingCharacter, setSupportingCharacter}) => {
     return ( 
         <div>
             <button type="button" data-testid="supporting-character-button" className="bfbutton" onClick={handleButtonClick}>Get Supporting Character</button>
-            {showGif && <img className="support-char-gif" src="/images/bigFinish/capaldi_clocks.gif" alt="GIF" />} 
         </div>
     );
 }

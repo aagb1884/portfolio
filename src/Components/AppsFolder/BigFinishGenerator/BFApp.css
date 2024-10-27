@@ -5,6 +5,9 @@
   min-height: 100vh;
   text-align: center;
   font-family: 'Lato', sans-serif;
+  display: flex;
+  align-items: center;
+  z-index: 0;
   width: 100%;
     overflow-y: auto;
           height: 100%;
@@ -25,7 +28,7 @@
   position: fixed;
   z-index:1;
   width: 100%;
-  height: 125px;
+  height: 12vh;
   top: 0;
   background-color: #972C34;
   color: white;
@@ -40,19 +43,19 @@ header > h3 {
 }
 
 .the {
-  font-size: 4rem;
+  font-size: 2rem;
   font-stretch: extra-condensed;
   margin-left: 5px;
   margin-right: 10px
 }
 
 .big {
-  font-size: 6rem;
+  font-size: 4.2rem;
   font-stretch: extra-expanded;
 }
 
 .finish {
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   font-weight: bolder;
   padding-left: 3px;
 }
@@ -64,7 +67,7 @@ header > h3 {
 
 .line {
   margin: 10px;
-  font-size: 5rem;
+  font-size: 4rem;
   padding-bottom: 0.1%;
   font-weight: lighter;
 }
@@ -77,15 +80,19 @@ header > h3 {
 }
 
 .randomiser {
-  position: absolute;
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 80%;
+  transform: translate(-50%, -50%);
   left: 50%;
   top: 60%;
-  transform: translate(-50%, -50%);
-  font-size: larger;
-  padding-top: 150px;
-  padding-bottom: 100px;
+  background-color: #fff;
+  align-content: center;
+  align-items: center;
   justify-content: center;
-  
+  z-index: 0;
 }
 
 .social-media-share{
@@ -107,7 +114,7 @@ header > h3 {
   padding-top: 15%
 }
 
-img.main-char-gif,
+/* img.main-char-gif,
 img.support-char-gif,
 img.villain-gif,
 img.location-gif{
@@ -117,7 +124,7 @@ img.location-gif{
   height: auto;
   margin: 0 auto;
   padding: 10px;
-}
+} */
 
 
 .big-finish-footer {
@@ -135,28 +142,57 @@ img.location-gif{
   z-index: 999;
 }
 
+.first-row, .second-row {
+  display: flex;
+  flex-direction: row;
+}
 
 .bfbutton{
   background-color: #972C34;
   color: white;
-  width: 200px;
-  position: relative;
-  top: 0;
-  left: 0;
-  margin-bottom: 5px;
   padding: 5px;
+  width: 170px;
+  height: 100px;
+  align-items: 'center';
+  justify-content: 'center';
+  margin: 5px;
 }
 
 .randomiser-buttons{
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
+  /* justify-content: center;
+  align-items: center;
+  margin: auto, */
+}
+
+.gif-window {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  align-items: center;
   justify-content: center;
+  width: 100%;
+}
+
+.gif-image {
+  margin-top: 20;
+  opacity: 0.9;
+  object-fit: cover;
+  width: auto;
+  height: 255px;
 }
 
 .main-character, .location, .villain, .supporting-character{
-  text-align: center;
-  line-height: 1;
+  text-align: left;
+  line-height: 0.8;
 }
+
+.generated-story {
+  max-width: 400px;
+  margin-top: 20px;
+}
+
 
 @media only screen and (max-width: 650px) {
  header{

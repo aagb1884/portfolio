@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 
-const Villain = ({villain, setVillain}) => {
+const Villain = ({setVillain, setShowGif, setGif}) => {
 
     const villains = [
         'Pigbin Josh',
@@ -24,7 +24,6 @@ const Villain = ({villain, setVillain}) => {
         'woke Davros'
     ];
 
-    const [showGif, setShowGif] = useState(false);
     const previousVillain = useRef(null);
 
     function get_random_villain() {
@@ -45,7 +44,7 @@ const Villain = ({villain, setVillain}) => {
     function handleButtonClick() {
         setShowGif(true);
         audio.play();
-
+        setGif("/images/bigFinish/mccoy_titles.gif");
         setTimeout(() => {
             get_random_villain();
             audio.pause();
@@ -57,7 +56,6 @@ const Villain = ({villain, setVillain}) => {
     return ( 
         <div>
             <button type="button" data-testid="villain-button" className="bfbutton" onClick={handleButtonClick}>Get Villain</button>
-            {showGif && <img className="villain-gif" src="/images/bigFinish/mccoy_titles.gif" alt="GIF" />} 
         </div>
     );
 }
