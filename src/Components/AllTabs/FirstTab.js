@@ -1,9 +1,9 @@
 import React from "react";
-import ExoWeather from "../Projects/exoWeather";
 import EurovisionBingo from "../Projects/EurovisionBingo";
 import SlightlyBetterBooks from "../Projects/SlightlyBetterBooks";
 import { Link } from "react-router-dom";
 import AllApps from "../Projects/AllApps";
+import ScottishFootballSims from "../Projects/ScottishFootballSims";
 
 const FirstTab = () => {
 
@@ -20,13 +20,13 @@ const FirstTab = () => {
       <br />
       <aside>Click on project heading to see/hide further info.</aside>
       <br />
-      <ExoWeather />
-      <br />
       <SlightlyBetterBooks />
       <br />
       <EurovisionBingo />
       <br />
       <AllApps />
+      <br />
+      <ScottishFootballSims />
     </section>
   );
 };
