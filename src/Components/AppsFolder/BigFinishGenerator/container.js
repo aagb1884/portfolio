@@ -7,6 +7,7 @@ import BFFooter from "./components/BFFooter";
 import ClearAll from "./components/ClearAll";
 import React, { useState } from 'react';
 import SocialMediaShare from "./components/SocialMediaShare";
+import ShareButton from "./components/ShareButton";
 
 
 const Container = () => {
@@ -17,12 +18,14 @@ const Container = () => {
     const [location, setLocation] = useState("");
     const [showGif, setShowGif] = useState(false);
     const [gif, setGif] = useState("");
+    const [showModal, setShowModal] = useState(false);
 
     function clearAll() {
         setMainCharacter("");
         setSupportingCharacter("");
         setVillain("");
         setLocation("");
+        setShowModal(false);
     }
 
     const pitch = `At last, ${mainCharacter} and ${supportingCharacter} meet ${villain} in ${location}!`
@@ -34,8 +37,9 @@ const Container = () => {
         <Header />
             <section className="randomiser" data-testid="randomiser">
                 <div className="randomiser-buttons">
-                    <div className="gif-window">
+                    <div className="gif-window"> 
                     {showGif && <img className="gif-image" src={gif} alt="GIF" />} 
+                    </div>
                     <div className="first-row">
                     <div><MainCharacter 
                     setMainCharacter={setMainCharacter}
@@ -60,7 +64,7 @@ const Container = () => {
                     setGif={setGif} /></div>
                     </div>
 
-                    </div>
+                    
                 </div>
                 <div className="generated-story">
                 {!mainCharacter && !supportingCharacter && !villain && !location && (
@@ -72,15 +76,32 @@ const Container = () => {
                 {location && <p className='location'>in {location}</p>}
                 </div>
                 
+                <div className="clear-and-share">
+                    
                 {(mainCharacter || supportingCharacter || villain || location) && (
                 <div className="additional-button">
                
                     <ClearAll clearAll={clearAll} />
-                
-                    <SocialMediaShare pitch={pitch} />   
+                    </div>
+                 )} 
+
+                {mainCharacter && supportingCharacter && villain && location && (
+                 <div className="additional-button">
+                    <ShareButton 
+                    showModal={showModal}
+                    setShowModal={setShowModal}/>
+               </div>
+                 )} 
                 </div>
-                 )}  
+                {showModal && (
+                        <div className="bf-share-modal">
+                        <SocialMediaShare 
+                        pitch={pitch}
+                        setShowModal={setShowModal}/>
+                        </div>
+                    )}
             </section>
+            
         <BFFooter />
         </div>
         

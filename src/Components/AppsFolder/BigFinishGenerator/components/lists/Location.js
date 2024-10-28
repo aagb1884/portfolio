@@ -51,7 +51,7 @@ const EventLocation = ({setLocation, setShowGif, setGif}) => {
     }
 
     return ( 
-        <div>
+        <div className='bfbutton-container'>
             <button type="bfbutton" data-testid="location-button" className="bfbutton" onClick={handleButtonClick}>Get Location</button>
         </div>
     );

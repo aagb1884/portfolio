@@ -56,7 +56,7 @@ const MainCharacter = ({setMainCharacter, setShowGif, setGif}) => {
     }
 
     return ( 
-        <div>
+        <div className='bfbutton-container'>
             <button type="bfbutton" data-testid="main-character-button" className="bfbutton" onClick={handleButtonClick}>Get Main Character</button>
         </div>
     );

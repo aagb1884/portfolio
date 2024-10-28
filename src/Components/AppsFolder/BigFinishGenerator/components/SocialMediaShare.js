@@ -1,41 +1,39 @@
 import React from "react";
-import { FacebookShareButton, FacebookIcon,
-        TumblrShareButton, TumblrIcon,
-        RedditShareButton, RedditIcon,
+import { RedditShareButton, RedditIcon,
         WhatsappShareButton, WhatsappIcon,
         EmailShareButton, EmailIcon 
     } from 'react-share';
 
-const SocialMediaShare = ({pitch}) => {
+const SocialMediaShare = ({pitch, setShowModal}) => {
 
     const shareUrl = "https:/andrewblair.co.uk/apps/big-finish-generator/";
-    const shareQuote = `${pitch} - I generated this boxset idea and had several minutes of entertainment courtesy of the Big Finish Boxset Generator, and you can too.`;
+    const shareQuote = `The new Big Finish boxset: ${pitch}.`;
     const shareTitle = "The Big Finish Boxset Generator";
 
+    const bigOlShareText = `${shareTitle}:
+    
+    ${shareQuote}
+    
+    Generate yours at ${shareUrl}`
+
+    const handleCopyClick = async () => {
+        try {
+            await window.navigator.clipboard.writeText(bigOlShareText);
+            alert("Copied to clipboard!");
+        } catch (err) {
+            console.error(
+                "Unable to copy to clipboard.",
+                err
+            );
+            alert("Copy to clipboard failed.");
+        }
+    };
+
     return ( 
-        <aside className="bf-aside">
-            Share this on your social channels.
-            <div className="social-media-share">
-        <div className="facebook">
-            <FacebookShareButton
-            url={shareUrl}
-            quote={shareQuote}
-            hashtag="#doctorwho"
-            >
-                <FacebookIcon size={30} />
-            </FacebookShareButton>
-        </div>
-        <div className="tumblr">
-            <TumblrShareButton
-            url={shareUrl}
-            caption={shareQuote}
-            tags={["doctorwho", "bigfinish"]}
-            title={shareTitle}
-            posttype="link"
-            >
-                <TumblrIcon size={30} />
-            </TumblrShareButton>
-        </div>
+        <section className="share-modal">
+            <h4 style={{'color': 'white'}}>Share this on your social channels.</h4>
+        
+        <div className="social-media-share">
         <div className="reddit">
             <RedditShareButton
             url={shareUrl}
@@ -60,11 +58,31 @@ const SocialMediaShare = ({pitch}) => {
             subject={shareTitle}
             separator=" "
             >
-                <EmailIcon size={30} />
+            <EmailIcon size={30} />
             </EmailShareButton>
         </div>
+        <div className="copy-clipboard">
+            <button
+            onClick={handleCopyClick}
+            >
+            <img 
+            src="/images/icons8-copy-to-clipboard-48.png"
+            alt="Copy to Clipboard icon by Icons8"
+            title="Copy to Clipboard (icon by Icons8)"
+            id="clipboard"
+            />
+            </button>
         </div>
-        </aside>
+
+        </div>
+        <div 
+        className="close"
+        style={{'color': 'white'}}
+        onClick={() => {setShowModal(false)}}>
+        X
+        </div>
+
+        </section>
      );
 }
  

@@ -55,7 +55,7 @@ const SupportingCharacter = ({setSupportingCharacter, setShowGif, setGif}) => {
     }
 
     return ( 
-        <div>
+        <div className='bfbutton-container'>
             <button type="button" data-testid="supporting-character-button" className="bfbutton" onClick={handleButtonClick}>Get Supporting Character</button>
         </div>
     );

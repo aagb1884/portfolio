@@ -1,4 +1,3 @@
-
 .container{
   background-color: #ffffff;
   position: relative;
@@ -9,10 +8,11 @@
   align-items: center;
   z-index: 0;
   width: 100%;
-    overflow-y: auto;
-          height: 100%;
+    /* overflow-y: auto;
+          height: 100%; */
 }
 
+/* header  */
 .big-finish-header {
   background-color: #972C34;
   color: white;
@@ -72,61 +72,177 @@ header > h3 {
   font-weight: lighter;
 }
 
-.clear-all-button{
-  margin-top: 5px;
-  background-color: #972C34;
-  color: white;
-  padding: 5px;
+
+.bf-aside{
+  padding-top: 15%
 }
+
+/* main screen */
 
 .randomiser {
   position:relative;
   display: flex;
   flex-direction: column;
   flex: 1;
-  height: 80%;
+  height: 100%;
+  margin-top: 30vh;
+  margin-bottom: 70px;
   transform: translate(-50%, -50%);
   left: 50%;
   top: 60%;
   background-color: #fff;
-  align-content: center;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   z-index: 0;
+  overflow-y: scroll;
 }
 
-.social-media-share{
-  display:flex;
-  flex-direction: row;
+.randomiser-buttons{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  position: relative;
+  align-items: center;
+}
+
+.gif-window {
+  display: flex;
+  position: absolute;
+  z-index: 2;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  padding: 5%;
-  max-width: 300px;
-  width: auto;
+  width: 100%;
+}
+
+.gif-image {
+  opacity: 0.9;
+  object-fit: contain;
+  width: 100%;
+  height: 225px;
+}
+
+.first-row, .second-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* buttons */
+.bfbutton-container {
+  display: flex;
+  border-width: 3px;
+  border-color: #ffd33d; 
+  border-radius: 5px;
+  width: 170px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+.bfbutton{
+  background-color: #972C34;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  align-items: 'center';
+  justify-content: 'center';
+  margin: 5px;
+  padding: 5px;
+  width: 99%;
+  height: 99%;
+  position: relative;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  border-width: 3px;
+  border-color: black;
+  flex: 1;
+}
+
+/* generated story */
+.generated-story {
+  max-width: 80%;
+  margin-top: 20px;
+}
+
+.generated-story > p {
+  margin-top: 0px;
+  line-height: 1.4;
+}
+
+.main-character, .location, .villain, .supporting-character{
+  text-align: left;
+  line-height: 0.9;
+  margin-top: 5px;
+}
+
+/* clear/share  */
+
+.clear-and-share {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.clear-all-button, .share-button{
+  margin-top: 5px;
+  background-color: #972C34;
+  color: white;
+  padding: 5px;
+}
+
+.share-button{
+  background-color: rgb(64, 133, 224);
 }
 
 .social-media-share .react-share__ShareButton{
   margin: 5px;
 }
 
-.bf-aside{
-  padding-top: 15%
+.bf-share-modal{
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.share-modal {
+  display: flex;
+  background: rgb(64, 133, 224, 0.95);
+  align-items: center;
+  margin: 5px;
+  padding: 6px;
+  border-radius: 5px;
+  box-shadow: 0 30px 40px rgba(0,0,0,.3);
+  width: 100%;
+}
+.social-media-share{
+  background: rgba(10, 48, 99, 0.2);
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 5%;
+  width: 85%;
 }
 
-/* img.main-char-gif,
-img.support-char-gif,
-img.villain-gif,
-img.location-gif{
-  display: block;
-  max-width: 200px;
-  width: auto;
-  height: auto;
-  margin: 0 auto;
-  padding: 10px;
-} */
+#clipboard {
+  width: 30px;
+  height: 30px;
+}
 
 
+.copy-clipboard {
+  width: 30px;
+  height: 30px;
+}
+
+
+/* footer  */
 .big-finish-footer {
   background-color: #972C34;
   color: white;
@@ -139,65 +255,20 @@ img.location-gif{
   bottom: 0;
   width: 100%;
   height: 70px;
-  z-index: 999;
+  z-index: 3;
 }
 
-.first-row, .second-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.bfbutton{
-  background-color: #972C34;
-  color: white;
-  padding: 5px;
-  width: 170px;
-  height: 100px;
-  align-items: 'center';
-  justify-content: 'center';
-  margin: 5px;
-}
-
-.randomiser-buttons{
-  /* display: flex; */
-  flex-direction: column;
-  /* justify-content: center;
-  align-items: center;
-  margin: auto, */
-}
-
-.gif-window {
-  position: absolute;
-  top: 0;
-  z-index: 2;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.gif-image {
-  margin-top: 20;
-  opacity: 0.9;
-  object-fit: cover;
-  width: auto;
-  height: 255px;
-}
-
-.main-character, .location, .villain, .supporting-character{
-  text-align: left;
-  line-height: 0.8;
-}
-
-.generated-story {
-  max-width: 400px;
-  margin-top: 20px;
-}
-
-
-@media only screen and (max-width: 650px) {
- header{
-  height: 100px;
+@media only screen and (max-width: 670px) {
+ .big-finish-header{
+  height:75px;
  }
+ .bf-app-links > .app-page-nav-links > ul > li {
+  font-size: 16px;
+ }
+ .bf-app-links {
+  height: 10%;
+ }
+
  .ideas-are-hard{
   font-size: 18px;
  }
@@ -215,17 +286,14 @@ font-size: larger;
  .boxset-generator{
 font-size: medium;
  }
-/* .bf-app-links{
-  font-size: x-small;
-  height: 100px;
-} */
+
 footer > h1 {
   padding-left: 5px;
 }
 
 .line {
   margin: 10px;
-  font-size: 5rem;
+  font-size: 3rem;
   padding-bottom: 15px;
 }
 .button{
@@ -234,6 +302,11 @@ footer > h1 {
 
 .fitton{
   font-size: small;
+  padding: 1%;
+}
+
+.randomiser{
+  margin-top: 120px;
 }
 }
 
@@ -243,11 +316,9 @@ footer > h1 {
    }
     header{
       font-size: 8px;
-      height: 100px;
+      height: 75px;
     }
     footer{
-      height: 100px;
-      position: absolute; 
       font-size: xx-small
     }
     .the {
@@ -264,27 +335,9 @@ footer > h1 {
        .boxset-generator{
       font-size: small;
        }
-       img{
-        display: block;
-        max-width: 150px;
-        width: auto;
-        height: auto;
-       }
-       
-       .randomiser {
-        font-size: small;
-        text-align: center;
-        padding-top: 100px;
-        padding-bottom: 100px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-      }
-      .button{
-        width: 150px;
-        margin: 2px;
-      }
+       /* .randomiser {
+        top: 40%;
+      } */
       .social-media-share .react-share__ShareButton{
         width: 10px;
         height: 10px;

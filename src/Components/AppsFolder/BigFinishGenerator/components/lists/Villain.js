@@ -54,7 +54,7 @@ const Villain = ({setVillain, setShowGif, setGif}) => {
     }
 
     return ( 
-        <div>
+        <div className='bfbutton-container'>
             <button type="button" data-testid="villain-button" className="bfbutton" onClick={handleButtonClick}>Get Villain</button>
         </div>
     );
