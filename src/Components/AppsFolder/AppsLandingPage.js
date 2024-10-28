@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import './appPages.css'
 import Footer from "./Footer";
 import EuroBingoAppLinks from "./eBingoAppLinks";
+import BFGeneratorAppLinks from "./bfGeneratorLinks";
 
 const AppsLandingPage = () => {
     return ( 
@@ -70,7 +71,7 @@ const AppsLandingPage = () => {
                 <aside>NB. <i>Wesley Snopes</i> and <i>Derek Adams Management Simulator</i> are probably not suitable for work.</aside>
                 <aside><i>Derek Adams Management Simulator</i> links to an external site.</aside>
                <EuroBingoAppLinks />
-               
+               <BFGeneratorAppLinks />
                 </section>
             </div>
             <div className="home-link">
