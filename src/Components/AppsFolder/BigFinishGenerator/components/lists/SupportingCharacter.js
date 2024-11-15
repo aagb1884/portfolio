@@ -3,12 +3,12 @@ import { useState, useRef } from 'react';
 const SupportingCharacter = ({setSupportingCharacter, setShowGif, setGif}) => {
 
     const supportingCharacters = [
-        'Pigbin Josh',
+    'Pigbin Josh',
         "Choking on an Olive woman from 'The Lazarus Experiment'",
         "that pirate who disappears for ages",
         'Angie and Artie Maitland',
         "Richard Nixon",
-        "'Eat My Salad' guy",
+        "the 'Eat My Salad' guy",
         "Commander Maxil's hat",
         "Baby Sergeant Benton",
         'Pete the Morgue Attendant',
@@ -18,12 +18,20 @@ const SupportingCharacter = ({setSupportingCharacter, setShowGif, setGif}) => {
         'Gilbert M',
         'Courtney Pine',
         'the Ogron-Eater',
-        "commodore 'tonker' travers",
+        "Commodore 'Tonker' Travers",
         'CyberBrig',
         'the Afghan kid Danny Pink killed',
         'the cow the Doctor asked about time scanners',
         "Maria's Dad",
-        "Nerys"
+        "Nerys",
+        "Bill's Foster Mum",
+        "Boss Baby",
+        "an increasingly wounded Davina McCall",
+        'Gerry Adams',
+        'a cat called Clive Owen',
+        "characters similar to - but legally distinct from - ones in 'Thunderbirds' called Jaff Treacy and Broins",
+        'Wolsey',
+        "the Brigadier's Italian Uncle, Mario,"
     ];
 
     const previousCharacter = useRef(null);

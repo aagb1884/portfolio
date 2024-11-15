@@ -11,7 +11,7 @@ const ScottishFootballSims = () => {
       <h2 onClick={toggleVisibility}>Scottish Football Simulators</h2>
       {isVisible &&     
 
-      <div className='projectt-description'>
+      <div className='project-description'>
        <p>This website hosts my Scottish football-themed games.</p> 
        <p>Currrently there are two text adventures -  The Derek Adams Management Simulator, the Rangers Manager Simulator - and a version of the 2048 puzzle game based around Hibs managers.</p>
        <p>These have been built from tutorials in my spare time with a view to learning how to make browser-based games.</p>

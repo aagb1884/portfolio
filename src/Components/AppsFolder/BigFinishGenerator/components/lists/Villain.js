@@ -9,19 +9,28 @@ const Villain = ({setVillain, setShowGif, setGif}) => {
         'Madame Kovarian',
         'Jack Robertson',
         'the Timewyrm',
-        'that big Yellow Dalek',
         'General Cobb',
-        'evil gas or something, whatever it was',
-        'the Birmingham six',
+        'evil gas or something',
+        'the Birmingham Six',
         'the War Engin',
         "Turlough's solicitor",
         'Mark Lawrenson',
         'Dark Sam',
         'all the Kraals',
-        'Mysterious Man',
+        "Bertie Carvel's Mysterious Man",
         'the Shansheeth',
         'a Hypnotron',
-        'woke Davros'
+        'Woke Davros',
+        "Ian Levine's AI Hartnell",
+        'that big yellow Dalek',
+        'Andrew Marr',
+        'Two-Armed Condo',
+        "Gareth Roberts' Twitter Feed",
+        "a terrifying renegade Time Lord called 'Timmy the Shit'",
+        'a team-up of all the Pertwee era Civil Servants',
+        'a boom mic',
+        'Henry Kissinger',
+        'Yvonne Hartman'
     ];
 
     const previousVillain = useRef(null);

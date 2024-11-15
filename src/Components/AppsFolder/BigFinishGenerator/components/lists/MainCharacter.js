@@ -3,28 +3,37 @@ import React, { useState, useRef } from 'react';
 const MainCharacter = ({setMainCharacter, setShowGif, setGif}) => {
 
     const mainCharacters = [
-        'The Tenth Doctor',
-        "The Tenth Doctor but it's Jackie Tyler in disguise",
+        'the Tenth Doctor',
+        'the Tenth Doctor but its the Fourteenth Doctor pretending to be the Tenth Doctor',
+        "the Tenth Doctor but it's Jackie Tyler pretending to be the Tenth Doctor",
         'River Song',
         'Dalek Caan',
         'The Morbius Doctors',
         'Captain Archibald Hamish Lethbridge-Stewart',
         'an unassuming writer/director/producer (plus actor) in his sixties',
         'Pigbin Josh',
-        "The Companions' Rebound Support Group", 
+        "the Companions' Rebound Support Group", 
         'Young Soldeed',
         "the painting of the Third Doctor from 'Timelash'",  
         'Elton Pope',
         'Lucy Saxon',
         'the Kerblam HR team',
-        "Someone Jacob Dudman can't quite do the voice for",
-        "Arabella Weir Doctor",
+        "someone Jacob Dudman can't quite do the voice for",
+        "the Arabella Weir Doctor",
         'Nardole',
         'Morton Dill',
         'Tallulah and Laszlo',
-        'Doctor Pastry',
+        "an Unbound Doctor where he's played as Mr Pastry",
         'Bessie',
-        'The Shadow Proclamation'
+        'the Shadow Proclamation',
+        'Doom',
+        "that big Irish cat from 'Gridlock'",
+        'Tecteun',
+        'a sentient caravan that turns out to be Dodo',
+        'K9 trapped in the body of a small girl',
+        'Alpha Centauri',
+        'the Solitract',
+        'Jackson Lake'
     ];
 
     const previousCharacter = useRef(null);

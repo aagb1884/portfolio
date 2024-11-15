@@ -258,6 +258,19 @@ header > h3 {
   z-index: 3;
 }
 
+.footer-app-store-link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+}
+.footer-ios-app-store-logo {
+  width: 30px;
+  height: auto;
+  margin: 0;
+  display: block;
+}
+
 @media only screen and (max-width: 670px) {
  .big-finish-header{
   height:75px;
