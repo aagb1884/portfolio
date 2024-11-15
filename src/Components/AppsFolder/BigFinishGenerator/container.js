@@ -28,7 +28,7 @@ const Container = () => {
         setShowModal(false);
     }
 
-    const pitch = `At last, ${mainCharacter} and ${supportingCharacter} meet ${villain} in ${location}!`
+    const pitch = `At last, ${mainCharacter} and ${supportingCharacter} meet ${villain} in ${location}`
 
      return (
     

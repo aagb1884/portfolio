@@ -27,7 +27,7 @@ const EventLocation = ({setLocation, setShowGif, setGif}) => {
         'the Death Zone.',
         "Adric's pocket.",
         "the Master's Mind Palace.",
-        'the Land of Non-Fiction.',
+        'the Land of Non-Fiction',
         'a karaoke bar.',
         'a small, poorly staffed garden centre.',
         'the year Nick Briggs last enjoyed Doctor Who (1976).',
