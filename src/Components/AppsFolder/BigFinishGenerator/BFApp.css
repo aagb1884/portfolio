@@ -264,12 +264,21 @@ header > h3 {
   gap: 20px;
   font-size: 18px;
   padding: 5px;
+  width: 48.5%;
 }
 .footer-ios-app-store-logo {
   width: 30px;
   height: auto;
   margin: 0;
   display: block;
+}
+
+.line{
+  width: 1%
+}
+
+.fitton {
+  width: 48.5%
 }
 
 @media screen and (max-width: 1000px) {
