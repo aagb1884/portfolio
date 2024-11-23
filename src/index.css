@@ -9,3 +9,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.hubot-sans {
+  font-family: "Hubot Sans", sans-serif;
+  font-optical-sizing: auto;
+}
