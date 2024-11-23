@@ -58,7 +58,7 @@ export default function Blog() {
                 </span>
               </span>
             </Link>
-            <p className='blog-preview'>{post.body[0].children[0].text.split('').slice(0, 55).join('')}...</p>
+            <p className='blog-preview'>{post.body[0].children[0].text.split('').slice(0, 100).join('')}...</p>
             <p className='blog-date'>{post.publishedAt.split('').slice(0, 10).join('')}</p>
             </div>
           ))}
