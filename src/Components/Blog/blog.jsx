@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "./sanity-client";
 import avatar from './avatar_ab.png'
+import HomeFooter from '../HomeFooter';
 
 export default function Blog() {
   const [allPostsData, setAllPosts] = useState(null);
@@ -63,7 +64,7 @@ export default function Blog() {
             </div>
           ))}
       </div>
-   
+          <HomeFooter />
     </section>
   );
 }
