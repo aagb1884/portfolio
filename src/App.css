@@ -67,17 +67,20 @@ font-size: 50px;
   color: #E8F0F2;
   font-size: large;
   font-weight: bold;
+  position: relative;
   @media (max-width: 769px) {
     padding: 2rem 0;
   }
-  position: relative;
-  padding: 20px; 
 }
 
 Form {
   border: 1px solid lightgray;
   border-radius: 10px;
   padding: 20px;
+}
+
+.project-description {
+  padding: 10px;
 }
 
 .ko-fi {
@@ -299,7 +302,7 @@ li{
     }
    
   .Tabs {
-    margin: 3rem auto 1.5rem;
+    margin: 1rem auto 1.5rem;
     padding: 2rem 1rem;
     font-size: small; 
   }

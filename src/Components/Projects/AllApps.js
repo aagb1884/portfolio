@@ -13,7 +13,7 @@ const AllApps = () => {
       <h2 onClick={toggleVisibility}>Daft Wee Apps</h2>
       {isVisible &&   
        
-            <div className='all-apps-description'>
+            <div className='project-description'>
 <br />
                   <h3>Multiple Projects</h3>
        <p>Some silly apps that I created for fun and to consolidate what I'd learned from my coursework, including the Eurovision Bingo app mentioned above,

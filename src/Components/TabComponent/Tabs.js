@@ -6,6 +6,7 @@ import SecondTab from "../AllTabs/SecondTab";
 import ThirdTab from "../AllTabs/ThirdTab";
 import Links from "../HeaderSection";
 import ContactForm from "../ContactForm";
+import HomeFooter from "../HomeFooter";
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -39,9 +40,7 @@ const Tabs = () => {
           </TabContent>
         </div>
       </div>
-      <div className="ko-fi">
-        <a href='https://ko-fi.com/W7W1URM7B' target='_blank' rel="noreferrer"><img height='36' src='https://storage.ko-fi.com/cdn/kofi4.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
-        </div>
+      <HomeFooter />
     </div>
   );
 };
