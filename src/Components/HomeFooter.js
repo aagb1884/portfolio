@@ -1,7 +1,7 @@
 import './Footer.css'
 import { Link } from 'react-router-dom/dist';
 
-const HomeFooter = () => {
+const HomeFooter = ({goToContactForm}) => {
     return ( 
         <footer className="home-footer">
         <h3 style={{'textAlign': 'left'}}>Website Navigation</h3>
@@ -10,6 +10,12 @@ const HomeFooter = () => {
 
         <div className='home-clm'>
         <Link to='/'>Home</Link>
+        <br />
+        <ul className='home-clm-links'>
+            <li onClick={() => {goToContactForm()}}>
+                Contact Form
+            </li>
+        </ul>
         </div>
 
         <div className='apps-clm'>

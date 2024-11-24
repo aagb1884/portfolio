@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import TabNavItem from "../V2/TabNavItem";
 import TabContent from "../V2/TabContent";
 import FirstTab from "../AllTabs/FirstTab";
@@ -11,6 +11,18 @@ import HomeFooter from "../HomeFooter";
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("tab1");
   const [showForm, setShowForm] = useState(false)
+  const myRef = useRef(null);
+  
+  const executeScroll = () => {
+    if (myRef.current) {
+      myRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const goToContactForm = () => {
+    executeScroll();
+    setShowForm(true)
+  } 
 
   return (
 <div className="Tabs">
@@ -18,7 +30,7 @@ const Tabs = () => {
         <Links 
         showForm={showForm}
         setShowForm={setShowForm} />
-        <div className="form">
+        <div className="form" ref={myRef}>
             {showForm && <ContactForm setShowForm={setShowForm} />}
           </div>
         <ul className="nav">
@@ -40,7 +52,9 @@ const Tabs = () => {
           </TabContent>
         </div>
       </div>
-      <HomeFooter />
+      <HomeFooter
+      goToContactForm={goToContactForm}
+      />
     </div>
   );
 };
