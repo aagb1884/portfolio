@@ -11,7 +11,7 @@ const EurovisionBingo = () => {
         <section className='eurovision-bingo'>
       <h2 onClick={toggleVisibility}>Eurovision Bingo</h2>
       {isVisible &&   
-        <div className='eurovision-bingo-description'>
+        <div className='project-description'>
           <br />
         <h3>Solo JavaScript Project: </h3>
        <p>A React app that produces a bingo card of six Eurovision cliches as buttons.</p>
