@@ -1,0 +1,30 @@
+.credits-container {
+    display: flex;
+    flex-direction: column;
+    background-color: navy;
+    height: 100%;
+    width: 95%;
+    overflow: scroll;
+    border-radius: 5px;
+}
+
+.credits-container > h3 {
+    color: white;
+}
+
+.credits-ul, .images-ul, .css-ul {
+    list-style-type: circle;
+    padding: 10px;
+}
+
+.credits-ul > h4, .images-ul > h4, .css-ul > h4 {
+    color: white;
+    text-align: left;
+}
+
+.credits-ul > li, .images-ul > li, .css-ul > li {
+    color: white;
+    font-size: 14px;
+    list-style-type: disc;
+    list-style-position: inside;
+}

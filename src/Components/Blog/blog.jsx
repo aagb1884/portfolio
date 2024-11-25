@@ -5,7 +5,7 @@ import sanityClient from "./sanity-client";
 import avatar from './avatar_ab.png'
 import HomeFooter from '../HomeFooter';
 
-export default function Blog() {
+export default function Blog({goToContactForm, goToTab, contact, tabs}) {
   const [allPostsData, setAllPosts] = useState(null);
 
   useEffect(() => {
@@ -64,7 +64,12 @@ export default function Blog() {
             </div>
           ))}
       </div>
-          <HomeFooter />
+          <HomeFooter 
+           goToContactForm={goToContactForm}
+           goToTab={goToTab}  
+           contact={contact}
+           tabs={tabs}
+           />
     </section>
   );
 }

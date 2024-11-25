@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import { Link } from "react-router-dom";
+import Minimise from '../Minimise';
 
 const PoetRemixer = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -24,11 +25,11 @@ const PoetRemixer = () => {
             <li>CSS</li>
         </ul>
         <br />
-        <a href="https://github.com/aagb1884/poetrEMIXERtool">Github Repo</a>
+        <a href="https://github.com/aagb1884/poetrEMIXERtool">Github Repo <img id='external-link' title='external link' src='/images/external-link.png' /></a>
         <br />
-        <Link to="https://poetremixertool.vercel.app/">Visit App here</Link>
+        <Link to="https://poetremixertool.vercel.app/">Link <img id='external-link' title='external link' src='/images/external-link.png' /></Link>
+        <Minimise toggleVisibility={toggleVisibility} />
         </div>
-       
       }
      </section>
     )

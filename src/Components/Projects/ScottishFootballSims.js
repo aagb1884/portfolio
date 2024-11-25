@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import Minimise from '../Minimise';
 
 const ScottishFootballSims = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -25,11 +26,12 @@ const ScottishFootballSims = () => {
             <li>CSS</li>
         </ul>
         <br />
-        <a href="https://github.com/aagb1884/scottish_football_sim">Github Repo</a>
+        <a href="https://github.com/aagb1884/scottish_football_sim">Github Repo <img id='external-link' title='external link' src='/images/external-link.png' /></a>
         <br />
         <img src="/images/Screenshot 2024-10-27 at 17.49.53.png" alt="Scottish Foootball Simulators Homepage" width="600" height="400"></img>
         <br />
-        <a href="https://scottish-football-simulators.co.uk/">Link (External Site)</a>
+        <a href="https://scottish-football-simulators.co.uk/">Link <img id='external-link' title='external link' src='/images/external-link.png' /></a>
+        <Minimise toggleVisibility={toggleVisibility} />
         </div>
 }
        </section>

@@ -27,9 +27,9 @@ const SecondTab = () => {
       <h2>Published Works</h2>
       <br />
       <ul>
-        <li>My articles at <a href="https://www.denofgeek.com/author/andrew-blair/">Den of Geek</a> (2011 - Present Day)</li>
-        <li>My articles at <a href="https://cultbox.co.uk/author/andrew-blair">Cultbox</a> (2013 - 2019)</li>
-        <li>Movie Geek: The Den of Geek Guide to the Movieverse, 2017 (Cassell) <a href="https://www.octopusbooks.co.uk/titles/den-of-geek/movie-geek/9781844039357/">[Buy Here]</a></li>
+        <li>My articles at <a href="https://www.denofgeek.com/author/andrew-blair/">Den of Geek <img id='external-link' title='external link' src='/images/external-link.png' /></a> (2011 - Present Day)</li>
+        <li>My articles at <a href="https://cultbox.co.uk/author/andrew-blair">Cultbox <img id='external-link' title='external link' src='/images/external-link.png' /></a> (2013 - 2019)</li>
+        <li>Movie Geek: The Den of Geek Guide to the Movieverse, 2017 (Cassell) <a href="https://www.octopusbooks.co.uk/titles/den-of-geek/movie-geek/9781844039357/">[Buy Here <img id='external-link' title='external link' src='/images/external-link.png' />]</a></li>
       </ul>
       </p>
       <br />

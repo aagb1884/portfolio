@@ -81,6 +81,37 @@ Form {
 
 .project-description {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.minimise {
+  text-align: center; 
+  border: 1px solid skyblue;
+  border-radius: 5px; 
+  width: 50%;
+}
+
+.FirstTab > summary > p, .SecondTab > summary > p, .ThirdTab > summary > p {
+  text-align: left;
+  line-height: 2.5;
+  padding: 10px;
+}
+
+.podcasting, .published-works > div, .live-events > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.podcasting > h2, .published-works > h2, .live-events > h2 {
+  width: 100%;
+} 
+
+.live-events-list > ul > li, .collections > li, .anthologies > li {
+  line-height: 2.5;
+  border-bottom: solid skyblue 1px;
 }
 
 .ko-fi {
@@ -333,9 +364,6 @@ li{
 @media (max-width: 500px) {
   .slide-image {
     width: 500px;
-  }
-  .links{
-    margin-left: 75px;
   }
 }
 

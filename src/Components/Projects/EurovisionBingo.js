@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import { Link } from "react-router-dom";
+import Minimise from '../Minimise';
 
 const EurovisionBingo = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -30,9 +31,10 @@ const EurovisionBingo = () => {
             <li>CSS</li>
         </ul>
         <br />
-        <a href="https://github.com/aagb1884/eurovisionBingo">Github Repo</a>
+        <a href="https://github.com/aagb1884/eurovisionBingo">Github Repo <img id='external-link' title='external link' src='/images/external-link.png' /></a>
         <br />
         <Link to="/apps/eurovision-bingo">Play App here</Link>
+        <Minimise toggleVisibility={toggleVisibility} />
         </div>
        
       }
