@@ -31,7 +31,7 @@ const BarryChips = () => {
             <li>PostgreSQL</li>
         </ul>
         <br />
-       <a href="https://github.com/aagb1884/solo_project_andrew_blair">Github Repo</a>
+       <a href="https://github.com/aagb1884/solo_project_andrew_blair">Github Repo <img id='external-link' title='external link' src='/images/external-link.png' /></a>
         <br />
         <br />
         <img src="images/barry_chips_homepage.png" alt="barry chips homepage"  width="600" height="400"></img>

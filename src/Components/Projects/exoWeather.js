@@ -30,7 +30,7 @@ const ExoWeather = () => {
             <li>CSS</li>
         </ul>
         <br />
-        <a href="https://github.com/aagb1884/exoWeather">Github Repo</a>
+        <a href="https://github.com/aagb1884/exoWeather">Github Repo <img id='external-link' title='external link' src='/images/external-link.png' /></a>
         <br />
         <br />
         <img src="images/exoWeather_searchScreen.png" alt='exoWeather search screen' width="600" height="400"></img>

@@ -2,6 +2,7 @@ import Anthologies from "./PublishedWorksComponents/Anthologies";
 import CollectionsPamphlets from "./PublishedWorksComponents/CollectionsPamphlets";
 import Journals from "./PublishedWorksComponents/Journals";
 import React, { useState } from 'react';
+import Minimise from "../Minimise";
 
 const PublishedWorks = () => {
 
@@ -23,6 +24,7 @@ const PublishedWorks = () => {
       <br />
       <Anthologies />
       <Journals />
+      <Minimise toggleVisibility={toggleVisibility} />
       </div>
       }
       </section>

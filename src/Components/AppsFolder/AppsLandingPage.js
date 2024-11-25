@@ -53,23 +53,34 @@ const AppsLandingPage = () => {
                 </div>
 
                 <div className="derek-adams">   
-                <Link to="https://derek-adams-simulator.vercel.app/">
+                <Link to="https://scottish-football-simulators.co.uk/">
                 
                     <img    src="/images/deekPrime.jpg" 
-                            alt="derek-adams-simulator-button" 
+                            alt="Scotish Football Simulators link" 
                             border="0"
                             className="button-image"/>
-                    <div className="button-text">Derek Adams Management Simulator</div>
+                    <div className="button-text">Scottish Football Simulators
+                    <img id='external-link' title='external link' src='/images/external-link.png' />
+                    </div>
                 </Link>
                 </div>
+                {/* <div className="derek-adams">   
+                <Link to="https://scottish-football-simulators.co.uk/">
+                
+                    <img    src="/images/deekPrime.jpg" 
+                            alt="Scotish Football Simulators link" 
+                            border="0"
+                            className="button-image"/>
+                    <div className="button-text">Scottish Football Simulators</div>
+                </Link>
+                </div> */}
                 </section>
                 <section className="apps-landing-copy">
-                <aside className="design-credit">Bouncing Text animation by <a href="https://lenadesign.org/2021/05/18/css-bouncing-text-animation/">Lena Design</a></aside>
-                <p>Four React apps; some requiring esoteric knowledge of <i>Doctor Who</i>, others less so.</p>
-                <p>You can find more information on each on my <a href="https://github.com/aagb1884">GitHub page</a>.</p>
+                <aside className="design-credit">Bouncing Text animation by <a href="https://lenadesign.org/2021/05/18/css-bouncing-text-animation/">Lena Design <img id='external-link' title='external link' src='/images/external-link.png' /></a></aside>
+                <p>Seven (and counting) React apps; some requiring esoteric knowledge of <i>Doctor Who</i>, others less so.</p>
+                <p>You can find more information on each on my <a href="https://github.com/aagb1884">GitHub page <img id='external-link' title='external link' src='/images/external-link.png' /></a>.</p>
                 <br />
-                <aside>NB. <i>Wesley Snopes</i> and <i>Derek Adams Management Simulator</i> are probably not suitable for work.</aside>
-                <aside><i>Derek Adams Management Simulator</i> links to an external site.</aside>
+                <aside>NB. <i>Wesley Snopes</i>, <i>Derek Adams Management Simulator</i> and <i>Rangers Manager Simulator</i> are probably not suitable for work.</aside>
                <EuroBingoAppLinks />
                <BFGeneratorAppLinks />
                 </section>
@@ -79,7 +90,7 @@ const AppsLandingPage = () => {
             </div>
             <div className="ko-fi">
                 
-                 <a href='https://ko-fi.com/W7W1URM7B' target='_blank' rel="noopener noreferrer"><img height='36' src='https://storage.ko-fi.com/cdn/kofi4.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+                 <a href='https://ko-fi.com/W7W1URM7B' target='_blank' title='external ko-fi-link' rel="noopener noreferrer"><img height='36' src='https://storage.ko-fi.com/cdn/kofi4.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
             </div>
             <div className="landing-footer">
              

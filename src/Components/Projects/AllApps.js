@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import { Link } from "react-router-dom";
+import Minimise from '../Minimise';
 
 const AllApps = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -21,6 +22,7 @@ const AllApps = () => {
        </p>
         <br />
         <Link to="/apps">See All Apps</Link>
+        <Minimise toggleVisibility={toggleVisibility} />
                 </div>
               
       }
