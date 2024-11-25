@@ -86,6 +86,10 @@ Form {
   align-items: center;
 }
 
+.project-description > p {
+  padding: 5px;
+}
+
 .minimise {
   text-align: center; 
   border: 1px solid skyblue;
@@ -94,15 +98,24 @@ Form {
 }
 
 .FirstTab > summary > p, .SecondTab > summary > p, .ThirdTab > summary > p {
-  text-align: left;
+  /* text-align: left; */
   line-height: 2.5;
   padding: 10px;
+}
+
+.SecondTab > ul > li {
+  padding: 10px;
+  text-align: left;
 }
 
 .podcasting, .published-works > div, .live-events > div {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.podcasting > p {
+  padding: 10px;
 }
 
 .podcasting > h2, .published-works > h2, .live-events > h2 {

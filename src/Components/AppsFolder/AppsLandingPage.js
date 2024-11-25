@@ -87,6 +87,8 @@ const AppsLandingPage = () => {
             </div>
             <div className="home-link">
             <Link to="/">Home</Link>
+            <Link to="/blog">Blog</Link>
+            <Link to="/credits">Credits</Link>
             </div>
             <div className="ko-fi">
                 

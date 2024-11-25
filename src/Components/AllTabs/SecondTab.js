@@ -23,7 +23,6 @@ const SecondTab = () => {
       <p>Since then I've covered film and TV festivals, filing reviews and interviews with actors, directors, writers and artists.</p>
       </summary>
       <br />
-      <p>
       <h2>Published Works</h2>
       <br />
       <ul>
@@ -31,7 +30,6 @@ const SecondTab = () => {
         <li>My articles at <a href="https://cultbox.co.uk/author/andrew-blair">Cultbox <img id='external-link' title='external link' src='/images/external-link.png' /></a> (2013 - 2019)</li>
         <li>Movie Geek: The Den of Geek Guide to the Movieverse, 2017 (Cassell) <a href="https://www.octopusbooks.co.uk/titles/den-of-geek/movie-geek/9781844039357/">[Buy Here <img id='external-link' title='external link' src='/images/external-link.png' />]</a></li>
       </ul>
-      </p>
       <br />
   
       <div className="slide-container">
