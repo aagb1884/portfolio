@@ -80,10 +80,11 @@
     border: 2px groove skyblue;
     border-radius: 5px;
     margin: 5px;
+    max-width: 250px;
 }
 
 #blogpost-header-img {
-    max-width: 300px;
+    max-width: 200px;
     height: auto;
     margin: 5px;
 }

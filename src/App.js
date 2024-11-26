@@ -70,7 +70,11 @@ return (
        contact={contact}
        tabs={tabs}
        />} />
-      <Route path="/blog/:slug" element={<BlogPost />} />
+      <Route path="/blog/:slug" element={<BlogPost 
+      goToContactForm={goToContactForm}
+      goToTab={goToTab}  
+      contact={contact}
+      tabs={tabs}/>} />
       <Route path="/credits" element={<Credits 
       goToContactForm={goToContactForm}
       goToTab={goToTab}  

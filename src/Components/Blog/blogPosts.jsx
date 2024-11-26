@@ -4,13 +4,14 @@ import sanityClient from "./sanity-client";
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
 import BlogNav from "./blog-nav";
+import HomeFooter from "../HomeFooter";
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
   return builder.image(source);
 }
 
-export default function BlogPost() {
+export default function BlogPost({goToContactForm, goToTab, contact, tabs}) {
   const [postData, setPostData] = useState(null);
   const { slug } = useParams();
 
@@ -65,6 +66,12 @@ export default function BlogPost() {
           dataset="production"
         />
       </div>
+      <HomeFooter 
+           goToContactForm={goToContactForm}
+           goToTab={goToTab}  
+           contact={contact}
+           tabs={tabs}
+           />
     </div>
   );
 }
