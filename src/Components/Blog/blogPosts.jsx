@@ -46,7 +46,7 @@ export default function BlogPost({goToContactForm, goToTab, contact, tabs}) {
     <div className="blogpost-container">
 
       <div>
-        <h2 className="blogpost-title">{postData.title}</h2>
+        <h1 className="blogpost-title">{postData.title}</h1>
       </div>
         <div></div>
       <div className="blogpost-header-container">

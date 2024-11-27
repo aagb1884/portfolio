@@ -101,6 +101,11 @@
 
 /* blog posts page  */
 
+.blogpost-title {
+    justify-content: center;
+    padding: 10px;
+}
+
 .blogpost-header-container {
     display: flex;
     flex-direction: column;
@@ -127,12 +132,16 @@
 }
 
 .blogpost-content {
-    padding: 10px;
+    padding: 30px;
 }
 
 .blogpost-content > div > figure {
     display: flex;
     justify-content: center;
+}
+
+.blogpost-content > div > p {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .blog-nav {
