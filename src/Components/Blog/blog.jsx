@@ -24,9 +24,10 @@ export default function Blog({goToContactForm, goToTab, contact, tabs}) {
       }
     }`
       )
-      .then((data) => setAllPosts(data))
+      .then((data) => setAllPosts(data.reverse()))
       .catch(console.error);
   }, []);
+
 
   return (
     <section className="blog-container">
@@ -45,7 +46,8 @@ export default function Blog({goToContactForm, goToTab, contact, tabs}) {
     
     <div className="blog-body">
         {allPostsData &&
-          allPostsData.map((post, index) => (
+          allPostsData
+          .map((post, index) => (
             <div className="blogpost-link">
             <Link to={"/blog/" + post.slug.current} key={post.slug.current}>
               <span key={index}
@@ -59,8 +61,10 @@ export default function Blog({goToContactForm, goToTab, contact, tabs}) {
                 </span>
               </span>
             </Link>
+            <div className='blogpost-info'>
             <p className='blog-preview'>{post.body[0].children[0].text.split('').slice(0, 100).join('')}...</p>
             <p className='blog-date'>{post.publishedAt.split('').slice(0, 10).join('')}</p>
+            </div>
             </div>
           ))}
       </div>
