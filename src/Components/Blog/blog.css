@@ -81,6 +81,8 @@
     border-radius: 5px;
     margin: 5px;
     max-width: 250px;
+    min-height: 100px;
+    height: auto;
 }
 
 #blogpost-header-img {
@@ -138,10 +140,30 @@
 .blogpost-content > div > figure {
     display: flex;
     justify-content: center;
+    width: 100%;
+}
+.blogpost-content > div > figure > img {
+    max-width: 350px;
+    border: 1px skyblue solid;
+    border-radius: 5px;
 }
 
 .blogpost-content > div > p {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.blogpost-content > div > ul > li{
+    list-style: circle;
+   
+}
+.blogpost-content > div > ol > li{
+    list-style:decimal;
+}
+
+.blogpost-content > div > ul > li, .blogpost-content > div > ol > li{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    list-style-position: inside;
 }
 
 .blog-nav {

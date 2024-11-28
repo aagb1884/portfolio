@@ -55,7 +55,7 @@ export default function Blog({goToContactForm, goToTab, contact, tabs}) {
                 alt="blogpost-header" 
                 id="blogpost-header-img"/>
                 <span>
-                  <h2 className='blog-link-textt'>{post.title}</h2>
+                  <h2 className='blog-link-text'>{post.title}</h2>
                 </span>
               </span>
             </Link>
