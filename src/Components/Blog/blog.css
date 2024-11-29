@@ -24,7 +24,7 @@
 
 .blog-title {
     font-size: x-large;
-    width: 65%;
+    width: 75%;
     padding: 10px;
     border: none;
     background-color: rgb(0, 0, 38);;
@@ -34,7 +34,7 @@
 }
 
 .avatar-container {
-    width: 35%;
+    width: 25%;
     position: relative;
     text-align: center;
     color: white;
@@ -64,6 +64,11 @@
     font-size: medium;
     text-shadow: -1px -1px 0 #007D80, 1px -1px 0 #007D80, 1px 1px 0 #007D80,
     1px 1px 0 #007D80;
+}
+
+.blog-category-filter {
+    display: flex;
+    justify-content: center;
 }
 
 .blog-body {
