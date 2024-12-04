@@ -13,7 +13,7 @@ import Credits from './Components/Credits/credits';
 function App() {
 return (
   <Router>
-    <AppWithRouter />
+    <AppWithRouter />page
   </Router>
 );
 }

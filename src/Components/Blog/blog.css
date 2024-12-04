@@ -157,6 +157,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.blogpost-content > div > blockquote {
+    text-align: center;
+    padding: 10px;
+}
+
 .blogpost-content > div > ul > li{
     list-style: circle;
    
