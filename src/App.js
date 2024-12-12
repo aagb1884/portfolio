@@ -10,6 +10,7 @@ import { useNavigate, BrowserRouter as Router, Routes, Route } from "react-route
 import React, { useState, useRef } from "react";
 import Credits from './Components/Credits/credits';
 
+
 function App() {
 return (
   <Router>

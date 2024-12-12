@@ -72,11 +72,11 @@
 }
 
 .blog-body {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto auto;
     margin: 20px;
     padding: 20px;
-    justify-content: space-evenly;
+    justify-items: center;
 }
 
 .blogpost-link {
