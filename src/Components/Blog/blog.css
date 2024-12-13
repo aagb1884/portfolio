@@ -201,6 +201,7 @@
 
 @media only screen and (max-width: 800px) {
     .blog-body {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
