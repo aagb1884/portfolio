@@ -1,3 +1,5 @@
+### UPDATE DEC 2024: I have replaced this with a Next JS site, but the web address is still the same.
+
 If you're trying to get on to my portfolio site, and are instead looking at this GitHub readme, please let me know via [LinkedIn](https://www.linkedin.com/in/andrew-blair-3604a0273/). Usually this means I have just updated my site, and it will correct itself in a few hours, but it's always worth me keeping an eye on it. 
 
 # How I Built This
